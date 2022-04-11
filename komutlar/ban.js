@@ -1,5 +1,4 @@
-m
-odule.exports = {
+module.exports = {
   name: "ban",
   code: `
 $author[1;$userTag[$mentioned[1]];$userAvatar[$mentioned[1]]]
