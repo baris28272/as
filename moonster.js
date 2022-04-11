@@ -19,7 +19,7 @@ for (const file of reader) {
     name: command.name,
     code: command.code,
     aliases: command.aliases,
-    nonPrefixed: command.nonPrefixed,
+    nonPrefixed: command.nonPrefixed
   });
 }
 
