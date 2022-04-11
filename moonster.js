@@ -373,9 +373,9 @@ bot.variables({
   elmas: "0",
   oy: "1",
   sliste: "1",
-  abonerol:"",
-  aboneyetkilisi:"",
-  abonesayisi:""
+  abonerol: "",
+  aboneyetkilisi: "",
+  abonesayisi: "",
 });
 
 bot.command({
@@ -423,7 +423,7 @@ bot.variables({
 bot.variables({
   hex: "66FFFF",
   prefix: "?",
-  oy:"",
+  oy: "",
 });
 
 bot.command({
@@ -504,7 +504,6 @@ $setServerVar[snipekk;$authorID]
 $onlyIf[$isBot[$authorID]==false;]
 `,
 });
-
 
 bot.variables({
   modlog: "",
@@ -624,4 +623,3 @@ $addField[1;**・Kodlar Nerde**;
 ]
 `,
 });
-
