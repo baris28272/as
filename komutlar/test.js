@@ -4,17 +4,22 @@ code:`
 $color[1;RANDOM]1
 $author[1;**$userTag[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
 
+$addField[1;**Sürümler**;
+<:emoji_75:963445326067425370> Node.js Sürüm : \`v16.12.0\`
+<:emoji_75:963445326067425370> Aoi.js Sürüm : \`v$packageVersion\`
+]
+
 $addField[1;**Hosting Detayları**;
-<:emoji_75:963445326067425370> CPU Kullanımı : \`%$cpu\`
+**<:emoji_75:963445326067425370> CPU Kullanımı : \`%$cpu\`
 <:emoji_75:963445326067425370> RAM Kullanımı : \`$ram\`
-<:emoji_75:963445326067425370> Uptime Süresi : \`$uptime\`
+<:emoji_75:963445326067425370> Uptime Süresi : \`$uptime\`**
 ]
 
 $addField[1;**Değeleri**;
-<:emoji_77:963445382933807216> Toplam Komutlar : \`$commandsCount\`
+**<:emoji_77:963445382933807216> Toplam Komutlar : \`$commandsCount\`
 <:emoji_77:963445382933807216> Toplam Sunucu : \`$serverCount\`
 <:emoji_77:963445382933807216> Toplam Kullanıcı : \`$allMembersCount\`
-<:emoji_77:963445382933807216> Toplam Kanal Sayım : \`$allChannelCount\`
+<:emoji_77:963445382933807216> Toplam Kanal Sayım : \`$allChannelCount\`**
 ]
 
 $addField[1;**Geliştiricilerim**;
