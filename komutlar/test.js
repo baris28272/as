@@ -1,12 +1,12 @@
 module.exports = {
 name:"test",
 code:`
-$color[1;RANDOM]1
-$author[1;**$userTag[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
+$color[1;RANDOM]
+$author[1;$userTag[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
 
 $addField[1;**Sürümler**;
-<:emoji_75:963445326067425370> Node.js Sürüm : \`v16.12.0\`
-<:emoji_75:963445326067425370> Aoi.js Sürüm : \`v$packageVersion\`
+**<:emoji_75:963445326067425370> Node.js Sürüm : \`v16.12.0\`
+<:emoji_75:963445326067425370> Aoi.js Sürüm : \`v$packageVersion\`**
 ]
 
 $addField[1;**Hosting Detayları**;
