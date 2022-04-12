@@ -12,7 +12,7 @@ $addField[1;**・Sürümler**;
 $addField[1;**・Hosting Detayları**;
 **<:emoji_75:963445326067425370> CPU Kullanımı : \`%$cpu\`
 <:emoji_75:963445326067425370> RAM Kullanımı : \`$ram\`
-<:emoji_75:963445326067425370> Uptime Süresi :** \`$uptime\`
+<:emoji_75:963445326067425370> Depolama Kullanımı : \`25.93359375 MB\`**
 ]
 
 $addField[1;**・Değeleri**;
@@ -23,7 +23,7 @@ $addField[1;**・Değeleri**;
 ]
 
 $addField[1;**・Geliştiricilerim**;
-**<:emoji_76:963445354626416650> $userTag[728155399655784488] - 728155399655784488**
+ **<:emoji_76:963445354626416650> $userTag[728155399655784488] - 728155399655784488**
 ]
 $footer[1;Komut $userTag Tarafından Kullanıldı;$userAvatar[$authorID]]
 $addButton[1;Davet Et;link;https://discord.com/api/oauth2/authorize?client_id=933330103180623892&scope=bot+applications.commands&permissions=8;no;<:emoji_75:963445326067425370>] 
