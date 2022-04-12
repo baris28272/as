@@ -27,7 +27,7 @@ $addField[1;**<:certificatemod:945700629278498847>・Moderasyon**;
 \`
 ]
 $addField[1;**<:emoji_62:933485235126034504>・Kullanıcı**;
-\`?id-sorgu | ?avatar | ?kurucu | ?sunucu-bilgi | ?roller | ?hatırlatıcı-oluştur | ?destek | ?sunucu-avatar | ?oy-ver
+\`?id-sorgu | ?avatar | ?kurucu | ?sunucu-bilgi | ?roller | ?hatırlatıcı-oluştur | ?destek | ?sunucu-avatar | ?oy-ver | ?i
 \`
   ]
 $image[1;https://media.discordapp.net/attachments/938892356424441987/958810493735297024/standard.gif]

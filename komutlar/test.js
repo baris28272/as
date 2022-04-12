@@ -1,8 +1,8 @@
 module.exports = {
-name:"test",
+name:"i",
 code:`
 $color[1;RANDOM]
-$author[1;$userTag[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
+$author[1;$username[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
 
 $addField[1;**・Sürümler**;
 **<:emoji_75:963445326067425370> Node.js Sürüm : \`v16.12.0\`
