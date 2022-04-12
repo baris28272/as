@@ -23,7 +23,10 @@ $addField[1;**Değeleri**;
 ]
 
 $addField[1;**Geliştiricilerim**;
-**<:emoji_76:963445354626416650> $userTag[728155399655784488] - 728155399655784488**]
+**<:emoji_76:963445354626416650> $userTag[728155399655784488] - 728155399655784488**
+]
+$addButton[1;Davet Et;link;https://discord.com/api/oauth2/authorize?client_id=933330103180623892&scope=bot+applications.commands&permissions=8;no;<:emoji_75:963445326067425370>] 
+$addButton[1;Destek;link;https://discord.gg/J8SkJwhYBs;no;<:emoji_75:963445326067425370>]  
 
 `
   }
