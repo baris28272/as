@@ -6,22 +6,17 @@ $if[$message[1]!=$randomText[yazı;tura]]
 $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$authorID];$multi[$message[2];2]];$authorID]
 $endif
 $wait[1ms]
-$editMessage[$get[mesaj];**$userTag** **$message[1]** için **$message[2]** TL bahis koydu.
-Para dönüyor $replaceText[$replaceText[$randomText[yazı;tura];yazı;:coin:];tura;:yellow_circle:] $replaceText[$replaceText[$checkContains[$randomText[yazı;tura];$message[1]];true;ve sen **$multi[$message[2];2]** kazandın.];false;vee hepsini kaybettin...];$channelID]
+$editMessage[$get[mesaj];**$userTag** **$message[1]** için **$message[2]** TL bahis koydu para dönüyor $replaceText[$replaceText[$randomText[yazı;tura];yazı;:coin:];tura;:yellow_circle:] $replaceText[$replaceText[$checkContains[$randomText[yazı;tura];$message[1]];true;ve sen **$multi[$message[2];2]** kazandın.];false;vee hepsini kaybettin...];$channelID]
 $wait[1s]
-$editMessage[$get[mesaj];**$userTag** **$message[1]** için **$message[2]** TL bahis koydu.
-Para dönüyor :yellow_circle:;$channelID]
+$editMessage[$get[mesaj];**$userTag** **$message[1]** için **$message[2]** TL bahis koydu para dönüyor :yellow_circle:;$channelID]
 $wait[1s]
 $editMessage[$get[mesaj];
-**$userTag** **$message[1]** için **$message[2]** TL bahis koydu.
-Para dönüyor :coin:;$channelID]
+**$userTag** **$message[1]** için **$message[2]** TL bahis koydu para dönüyor :coin:;$channelID]
 $wait[1s]
-$editMessage[$get[mesaj];**$userTag** **$message[1]** için **$message[2]** TL bahis koydu.
-Para dönüyor :yellow_circle:;$channelID]
+$editMessage[$get[mesaj];**$userTag** **$message[1]** için **$message[2]** TL bahis koydu para dönüyor :yellow_circle:;$channelID]
 $wait[1s]
 $editMessage[$get[mesaj];
-**$userTag** **$message[1]** için **$message[2]** TL bahis koydu.
-Para dönüyor :coin:;$channelID]
+**$userTag** **$message[1]** için **$message[2]** TL bahis koydu para dönüyor :coin:;$channelID]
 $wait[1s]
 $setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$authorID];$message[2]];$authorID]
 $let[mesaj;$channelSendMessage[$channelID;
