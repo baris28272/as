@@ -1,5 +1,5 @@
 module.exports = {
-name:"i",
+name:"'xxxxxffg",
 code:`
 $color[1;RANDOM]
 $author[1;$username[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
