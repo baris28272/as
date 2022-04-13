@@ -7,6 +7,7 @@ $setGlobalUserVar[staf;<:emoji_51:927275737696862251>;$authorID]
 $setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$authorID];200000];$authorID]
 $onlyIf[$getGlobalUserVar[para;$authorID]>200000;**<@$authorID>, cüzdanında yeterli miktarda para yok.**]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 `
 };

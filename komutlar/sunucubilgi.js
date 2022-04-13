@@ -21,5 +21,7 @@ $addField[1;**Genel Bilgi**;
 > **・ Sunucu Sahibi : <@$ownerID> | $userTag[$ownerID]**
 > **・ Sunucu Oluşturma Tarihi : $creationDate[$guildID]**
 ]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 `,
 };

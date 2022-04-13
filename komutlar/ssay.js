@@ -7,5 +7,6 @@ $description[1;
 \`•\` Sunucumuzda toplam **$math[$membersCount-$membersCount[$guildID;offline]]** aktif üye bulunmakta
 \`•\` Sunucumuza toplam **$serverBoostCount** boost basılmış]
 $color[1;BLACK] 
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 `,
 };

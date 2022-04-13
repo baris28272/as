@@ -10,4 +10,5 @@ module.exports = {
     $onlyForRoles[$getServerVar[aboneyetkilisi];Yetkin Yok]
     $onlyIf[$getServerVar[abonerol]!=0;**$customEmoji[emoji_71]・Bu Sunucuda Abone Rolü Ayarlı Değil**]
  $onlyIf[$getServerVar[aboneyetkilisi]!=0;**$customEmoji[emoji_71]・Bu Sunucuda Abone Yetkilisi Ayarlı Değil**]
-    `}
+  $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+  `}

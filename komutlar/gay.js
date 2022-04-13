@@ -6,7 +6,8 @@ $color[1;RANDOM]
 $description[1;
 **$userTag[$authorID] Sen \`%$random[1;100]\` Gay'sin**
 ]
-$addReactions[🔥]
+$addReactions[🌝]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 `,
 };

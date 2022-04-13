@@ -139,11 +139,8 @@ bot.variables({
 
 bot.status({
   text: "?yardım | ?destek | ?davet | 7/24 Aktif", //buraya durum yazısı
-
   type: "STREAMING", //buraya oynuyor bölümü PLAYING LISTENING WATCHING STREAMING şeklindede yapabilirsiniz
-
   status: "online", //buraya status kısmı dnd idle online şeklinde yapabilirsiniz
-
   time: 12, //buraya ellemeyin
 });
 
@@ -189,7 +186,7 @@ $addField[1;・Hesap Bilgileri;
 > ・**Hesap İsmi** : \`$userTag[$mentioned[1;yes]]\`
 > ・**Hesabın Yaşı** : \`$creationDate[$mentioned[1;yes]]\`
 > ・**Hesabın ID'si** : \`$mentioned[1;yes]\`]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz  
+$onlyIf[$getGlobalUserVar[kl;$mentioned[1;yes]]!=true;\`$getGlobalUserVar[ksebep;$mentioned[1;yes]]\` sebebinden karalistedesiniz  
 $footer[1;$username[$mentioned[1;yes]];$userAvatar[$mentioned[1]]]
 
 
@@ -325,46 +322,6 @@ $onlyForIDs[$botOwnerID;728155399655784488;]
 `,
 });
 
-bot.command({
-  name: "devpara",
-  code: `
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$description[1;
-<:emoji_70:917309183341236244> | \`$userTag[$authorID]\` **Başarıyla** \`900000000\` **Miktarında Para Aldın**]
- $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$authorID];900000000];$authorID]
-$onlyIf[$getGlobalUserVar[devpara;$authorID]!=Yok;]
-$globalCooldown[8s; {author:$username#$discriminator[$authorID]:$authorAvatar}{description: ⏱️ | Bu komutu kullanmak için **$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getCooldownTime[8s;globalUser;devpara;$authorID];minute;Dakika];second;Saniye];s;];and;ve];hour;Saat]** beklemelisin.}{color:FA0101}] 
-
-`,
-});
-
-bot.command({
-  name: "dev-çıkar",
-  code: `
-\`$username[$message[1]]#$discriminator[$message[1]]\` adlı kullanıcı artık \`?devpara\` komutunu kullanamaz.
-$setGlobalUserVar[devpara;Yok;$message[1]]
-$setGlobalUserVar[banka;0;$message[1]]
-$setGlobalUserVar[altın;0;$message[1]]
-$setGlobalUserVar[elmas;0;$message[1]]
-$setGlobalUserVar[para;0;$message[1]]
-$setGlobalUserVar[maaş;0;$message[1]]
-$onlyForIDs[$botOwnerID;728155399655784488;]
-$suppressErrors
-
-`,
-});
-
-bot.command({
-  name: "dev-ver",
-  code: `
-\`$username[$message[1]]#$discriminator[$message[1]]\` adlı kullanıcı artık \`?devpara\` komutunu kullanabilir.
-$setGlobalUserVar[devpara;Var;$message[1]]
-$onlyForIDs[$botOwnerID;728155399655784488;]
-$suppressErrors
-
-`,
-});
 
 bot.variables({
   devpara: "Yok",
@@ -438,6 +395,7 @@ $description[1;
 ]
 $onlyPerms[manageroles;**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**]
 $suppressErrors[1;]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 
 
@@ -456,6 +414,7 @@ $description[1;
 ]
 $onlyPerms[manageroles;**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**]
 $suppressErrors[1;]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 
 
@@ -473,6 +432,8 @@ $description[1;
 **$customEmoji[emoji_70] | Başarıyla \`$numberSeparator[$getGlobalUserVar[para;$authorID];,]\` Miktarında Para Bankaya Yatırıldı**]
 $footer[1;$userTag[$authorID];$userAvatar[$authorID]]
 $suppressErrors
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 `,
 });
 
@@ -487,6 +448,7 @@ $description[1;
 **$customEmoji[emoji_70] | Başarıyla \`$numberSeparator[$getGlobalUserVar[banka;$authorID];,]\` Miktarında Para Cüzdana Çekildi**]
 $footer[1;$userTag[$authorID];$userAvatar[$authorID]]
 $suppressErrors
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 `,
 });
 
@@ -518,6 +480,7 @@ $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;
 **<@$authorID>,<@$mentioned[1]> Kişisi Seni $randomText[Seviyor ❤;Sevmiyor 💔]**]
 $suppressErrors[1;{author:$userTag[$authorID]:$userAvatar[$authorID]}{description:**$customEmoji[emoji_71] | Dostum Birisini Etiketlemelisin**}{color:RANDOM}]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 `,
 });
@@ -544,6 +507,8 @@ $description[1;
 $timeOutMember[$guildID;$mentioned[1];$noMentionMessage]
 $onlyPerms[ban;**$customEmoji[emoji_71] | Bunun \`İçin Üyeleri Banla\` İznin Olmalı**]
 $suppressErrors
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 `,
 });
 
@@ -598,6 +563,7 @@ $description[1;
 **<a:developer:928760319021555744>・Destek Sunucum : [Destek Sunucuma Gelmek İçin Tıkla](https://discord.gg/3327ykB4fM)**
 ]
 $footer[1;Bu Komut $username Tarafından Kullanıldı;$userAvatar[$authorID]]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 `,
 });

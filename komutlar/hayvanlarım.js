@@ -7,5 +7,8 @@ $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$r
 :regional_indicator_e:  :crocodile:$splitText[8]  :whale:$splitText[9]
 :regional_indicator_m:  :unicorn:$splitText[10];0;⁰];1;¹];2;²];3;³];4;⁴];5;⁵];6;⁶];7;⁷];8;⁸];9;⁹]
 $textSplit[$getGlobalUserVar[hayvan;$authorID];/]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
+
 `
 }

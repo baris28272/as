@@ -8,5 +8,7 @@ module.exports = {
   $onlyIf[$getServerVar[snipe3]!=;**$customEmoji[emoji_71] | Snipe'lanıcak mesaj yok**]
   $thumbnail[1;$userAvatar[$authorID]]
   $footer[1;Bu Komut $userTag Tarafından Kullanıldı;$userAvatar[$authorID]] 
-  `,
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
+`,
 };

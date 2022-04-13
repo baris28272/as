@@ -9,6 +9,9 @@ $description[1;
 <@$authorID>, <@$mentioned[1]> Kullanıcısını Hackledi! 😱] 
 $image[1;https://media.discordapp.net/attachments/856207352779636748/856812849871847444/tenor.gif] 
 $color[1;00ff22] 
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
+
 `
 } 
 

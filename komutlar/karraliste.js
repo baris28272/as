@@ -1,9 +1,7 @@
 module.exports = {
-
   name: "karaliste",
-
+  $if:"v4",
   code: ` 
-
 $if[$message[1]==al] 
 $author[1;Üye Kara Listeye Alındı;$client[avatar]] 
 $description[1;**_\`$usertag[$replaceText[$replaceText[$replaceText[$replaceText[$message[2];<;;-1];@;;-1];!;;-1];>;;-1]]\`_ Başarılı bir şekilde kara listeye Alındı.** **Sebebi:** _\`$messageSlice[2]\`_ ] 

@@ -6,5 +6,6 @@ $image[1;$userAvatar[$mentioned[1;yes]]]
 $footer[1;$userTag tarafından istendi.]
 $color[1;BLACK]
 $suppressErrors
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 `,
 };

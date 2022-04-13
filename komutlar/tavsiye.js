@@ -13,5 +13,7 @@ $addField[1;**・Tavsiye Veren**;
 $footer[1;Komut,$userTag Tarafından Kullanıldı;$authorAvatar]
 $thumbnail[1;$authorAvatar]
 $onlyForServers[875458725115224175;]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 `,
 };

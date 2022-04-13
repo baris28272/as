@@ -5,5 +5,6 @@ module.exports = {
   $description[1;**$customEmoji[emoji_70]・Abone Yetkilisi Başarıyla <@&$mentionedRoles[1]> Olarak Ayarlandı**]
   $footer[1;$username Kullandı;$userAvatar[$authorID]]
   $color[1;RANDOM]
+  $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
   $onlyIf[$message!=;**$customEmoji[emoji_71]・Bir Rol Etiketlemelisin.**]`
 }

@@ -9,7 +9,6 @@ $description[1;
 $cooldown[1m;]
 $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$authorID];$random[500;3000]];$authorID]
 $footer[1;Bu Komutu,$username Tarafından Kullanıldı;$userAvatar[$authorID]] 
-
-
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 `,
 };

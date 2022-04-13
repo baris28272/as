@@ -8,6 +8,8 @@ $setGlobalUserVar[para;$sum[$random[100;500];$getGlobalUserVar[para;$authorID]];
 $footer[1;Bu Komut $userTag[$authorID] Tarafından Kullanıldı;$userAvatar[$authorID]
 $cooldown[7d;] 
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 
 `,
 };

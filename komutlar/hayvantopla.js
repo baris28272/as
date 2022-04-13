@@ -9,5 +9,8 @@ $let[w;$random[0;3]]
 $let[u;$random[0;1]]
 $wait[1s]
 $textSplit[$getGlobalUserVar[hayvan;$authorID];/]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
+
 `
 } 

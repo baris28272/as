@@ -34,5 +34,7 @@ $onlyIf[$getGlobalUserVar[para;$authorID]>=$message[2];**$customEmoji[emoji_71] 
 $onlyIf[0<$message[2];**$customEmoji[emoji_71] | Girdiğin miktar 0 ve altı olmamalı**]
 $onlyIf[$isNumber[$message[2]]!=false;**$customEmoji[emoji_71] | Miktar sadece **sayı olmalıdır**]
 $onlyIf[$checkCondition[$message[1]==yazı]$checkCondition[$message[1]==tura]!=falsefalse;**$customEmoji[emoji_71] | ?cf *yazı/tura* seçmelisiniz**]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 `
 }

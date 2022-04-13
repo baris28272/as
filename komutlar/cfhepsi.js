@@ -31,5 +31,8 @@ $let[para;$getGlobalUserVar[para;$authorID]]
 $wait[1ms]
 $onlyIf[$getGlobalUserVar[para;$authorID]>=0;**$customEmoji[emoji_71] | Hiç paran yok ki**]
 $onlyIf[$checkCondition[$message[1]==yazı]$checkCondition[$message[1]==tura]!=falsefalse;**$customEmoji[emoji_71] | ?cf hepsi yazı/tura seçmelisiniz**]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
+
 `
 }

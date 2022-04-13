@@ -16,5 +16,7 @@ $onlyBotPerms[managemessages; **$customEmoji[emoji_71] | Kullanman İçin Bana \
 $cooldown[10s;**$customEmoji[emoji_71] | <@$authorID> Yavaş Ol Kanka Bunu Kullanmak İçin 10 Saniye Beklemelisin**]
 $suppressErrors[1;**$customEmoji[emoji_71] | Bi Miktar Girmelisin**]
 $deletecommand
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+
 `,
 };

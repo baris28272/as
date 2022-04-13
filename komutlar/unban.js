@@ -10,5 +10,6 @@ $onlyIf[$isBanned[$message[1];$guildID]==true;**$customEmoji[emoji_71] | Bu Kull
 $onlyPerms[ban;**<:emoji_71:917309220687314966> | Bu Komutu Kullanamazsın Kullanmak İçin \`Üyeleri Banla\` Yetkin Olmalı**]
 $onlyBotPerms[ban;<:emoji_71:917309220687314966> | Bu Komutu Kullanmam İçin \`Üyeleri Banla\` Yetkim Olmalı]
 $suppressErrors[1;**<:emoji_71:917309220687314966> | Bir Kullanıcı ID'si Girmelisin**]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 `
 };
