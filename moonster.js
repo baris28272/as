@@ -85,6 +85,10 @@ bot.variables({
   sayı: "0",
   sil: "",
   hayvan: "0/0/0/0/0/0/0/0/0/0",
+ ticketcategory: "",
+ ticketsorumlusu: "",
+ ticket: "kapalı"
+
 });
 
 bot.joinCommand({
@@ -589,3 +593,54 @@ $addField[1;**・Kodlar Nerde**;
 ]
 `,
 });
+
+
+//ticket-sistemi
+
+bot.interactionCommand({
+  name: "DarkLonTicketAç",
+  prototype: "button",
+  $if: "v4",
+  code: `
+  $if[$getUserVar[ticket;$authorID]==kapalı]
+  $setUserVar[ticket;açık;$authorID]
+  $interactionReply[;{newEmbed:{description::m_approved2: **Başarıyla Ticket Açtınız!**}{color:GREEN}};;;;yes]
+  $useChannel[$createChannel[$guildID;ticket-$random[10;300];text;yes;$getServerVar[ticketcategory]]]
+  <@$authorID>
+  $description[1;<@$authorID> Tarafından Destek Talebi Açıldı!\n Kapatmak İçin 🔒 Butonuna Tıkla]
+  $color[1;$getVar[globalcolor]]
+  $addbutton[1;Kapat;secondary;DarkLonTicketKapat;no;🔒]
+  $endif
+  $if[$getUserVar[ticket;$authorID]==açık]
+  $interactionReply[;{newEmbed:{description::exclamation: <@$authorID> **Dostum Daha Önce Ticket Açmışsın!**}{color:ff0000}};;;;yes]
+  $endif
+  `
+  })
+
+bot.interactionCommand({
+    name: "DarkLonTicketKapat",
+    prototype: "button",
+    $if: "v4",
+    code: `
+  $if[$getUserVar[ticket;$authorID]==açık]
+  $setUserVar[ticket;kapalı;$authorID]
+  $useChannel[$channelID]
+  Destek Talebi <@$authorID> Tarafından Kapatıldı! Sayın Yetkili Kanal Silinsinmi?
+  $addbutton[1;Sil;secondary;DarkLonTicketSil;no;⛔]
+  $endif
+  $if[$getUserVar[ticket;$authorID]==kapalı]
+  $interactionReply[;{newEmbed:{description::exclamation: <@$authorID> **Dostum Bu Ticket Size Ait Değil!**}{color:ff0000}};;;;yes]
+  $endif
+  `
+})
+
+bot.interactionCommand({
+  name: "DarkLonTicketSil",
+  prototype: "button",
+  $if: "v4",
+  code: `
+  $deleteChannel[$channelID]
+  $description[1;**$channelName[$channelID] Adlı Kanal <@$authorID> Adlı Yetkili Tarafından Silindi**]
+  $onlyForRoles[$getServerVar[ticketsorumlusu];{newEmbed:{description:<@$authorID> Ticket Sorumlusu Değilsin!}{color:ff0000}{delete:3s}}]
+  `
+}) 
