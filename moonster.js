@@ -580,7 +580,7 @@ $addField[1;**❗・Not**;
 ]
 
 $addField[1;**:bell:・Şartlar**;
-<:emoji_83:917308236888170507>・[Reva - Development](https://youtube.com/channel/UC4Uqe3zqtVOLrGG8yLB9eBA) Kanalına Abone Olmanız Gerek
+<:emoji_83:917308236888170507>・[Moonster - Development](https://youtube.com/channel/UC4Uqe3zqtVOLrGG8yLB9eBA) Kanalına Abone Olmanız Gerek
 <:emoji_83:917308236888170507>・<#962473451271110756> Kanalından ?oy Komutunu Kullanarak Sunucuya Oy Vermelisiniz
 ]
 
