@@ -11,6 +11,7 @@ $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;**<:emoji_70:917309183341236244> | <@$authorID> Başarıyla Bankanızdan $message 💵 Para Kadar Çektiniz.**]
 $onlyIf[$noMentionMessage>=0;<:emoji_71:917309220687314966> | Sayıyı düzgün yaz.]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\`  sebebinden karalistedesiniz.] 
+$cooldown[5s;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`5 Saniye\` Beklemelisin.**] 
 
 `,
 };
