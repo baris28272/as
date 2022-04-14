@@ -10,7 +10,6 @@ $let[u;$random[0;1]]
 $wait[1s]
 $textSplit[$getGlobalUserVar[hayvan;$authorID];/]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
-
-
+$cooldown[30s;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`30 Saniye\` Beklemelisin.**] 
 `
 } 

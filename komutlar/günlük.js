@@ -6,7 +6,7 @@ $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;**<@$authorID>,Günlük ödülün $random[500;1500] 💵**]
 $setGlobalUserVar[para;$sum[$random[500;1500];$getGlobalUserVar[para;$authorID]];$authorID] 
 $footer[1;Bu Komut $userTag[$authorID] Tarafından Kullanıldı;$userAvatar[$authorID]
-$cooldown[24h;]
+$cooldown[24h;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`1 Gün\` Beklemelisin.**] 
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 `,
