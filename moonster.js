@@ -142,7 +142,7 @@ bot.variables({
 });
 
 bot.status({
-  text: "?yardım | ?destek | ?davet | 7/24 Aktif", //buraya durum yazısı
+  text: "Elveda Discord", //buraya durum yazısı
   type: "STREAMING", //buraya oynuyor bölümü PLAYING LISTENING WATCHING STREAMING şeklindede yapabilirsiniz
   status: "online", //buraya status kısmı dnd idle online şeklinde yapabilirsiniz
   time: 12, //buraya ellemeyin
