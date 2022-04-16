@@ -17,11 +17,6 @@ $addField[1;**<a:parack:927001644971995166>・Ekonomi**;
 \`
 ] 
 
-$addField[1;**<:emoji_83:917308236888170507>・Abone Sistemi**;
-\`?abone-rol ayarla | ?abone-yetkili ayarla | ?abone-istatistik | ?abone 
-\`
-]
-
 $addField[1;**<:certificatemod:945700629278498847>・Moderasyon**;
 \`?nuke | ?hgbb-ayarla | ?sil | ?ban | ?unban | ?bancount | ?oylama | ?kick | ?rol-ver | ?rol-al | ?timeout | ?snipe
 \`

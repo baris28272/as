@@ -570,11 +570,3 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 `,
 });
 
-bot.readyCommand({
-  channel: "964474015332831232",
-  code: `
-$djsEval[client.on("ready", () => {
-  client.channels.cache.get('964820326951313418').join();
-  });]
-`,
-});
