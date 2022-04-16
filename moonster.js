@@ -85,10 +85,9 @@ bot.variables({
   sayı: "0",
   sil: "",
   hayvan: "0/0/0/0/0/0/0/0/0/0",
- ticketcategory: "",
- ticketsorumlusu: "",
- ticket: "kapalı"
-
+  ticketcategory: "",
+  ticketsorumlusu: "",
+  ticket: "kapalı",
 });
 
 bot.joinCommand({
@@ -142,7 +141,7 @@ bot.variables({
 });
 
 bot.status({
-  text: "Elveda Discord", //buraya durum yazısı
+  text: "?yardım | ?destek | ?davet | 7/24 Aktif", //buraya durum yazısı
   type: "STREAMING", //buraya oynuyor bölümü PLAYING LISTENING WATCHING STREAMING şeklindede yapabilirsiniz
   status: "online", //buraya status kısmı dnd idle online şeklinde yapabilirsiniz
   time: 12, //buraya ellemeyin
@@ -325,7 +324,6 @@ $reboot[moonster.js]
 $onlyForIDs[$botOwnerID;728155399655784488;]
 `,
 });
-
 
 bot.variables({
   devpara: "Yok",
@@ -572,25 +570,11 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 `,
 });
 
-bot.command({
-  name: "yt",
+bot.readyCommand({
+  channel: "964474015332831232",
   code: `
-$author[1;$serverName;$serverIcon]
-$color[1;52FD01]
-
-$addField[1;**❗・Not**;
-<:emoji_83:917308236888170507>・Saat Gözükecek Şeklinde Ekran Görüntüsü Çekmelisiniz
-<:emoji_83:917308236888170507>・Ekran Görüntülerini <#955528634557399041> Kanalına Atmalısınız
-]
-
-$addField[1;**:bell:・Şartlar**;
-<:emoji_83:917308236888170507>・[Moonster - Development](https://youtube.com/channel/UC4Uqe3zqtVOLrGG8yLB9eBA) Kanalına Abone Olmanız Gerek
-<:emoji_83:917308236888170507>・<#962473451271110756> Kanalından ?oy Komutunu Kullanarak Sunucuya Oy Vermelisiniz
-]
-
-$addField[1;**・Kodlar Nerde**;
-・Kodları Görebilmek İçin <@&961902537664000020> | Abone Rolünü Almanız Gerekiyor
-]
+$djsEval[client.on("ready", () => {
+  client.channels.cache.get('964820326951313418').join();
+  });]
 `,
 });
-
