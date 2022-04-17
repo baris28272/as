@@ -570,3 +570,56 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 `,
 });
 
+//----------------  EKLENDİM - ATILDM LOG ----------------//
+
+bot.guildLeaveCommand({
+
+channel: "951753460255182888",
+
+code: `
+
+$title[1;:outbox_tray: **$serverName - Çıkış Yaptım** :outbox_tray:]
+
+$description[1;
+
+:white_small_square: Sunucu ID | **$guildID**
+
+:white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
+
+:white_small_square: Sahip ID | **$ownerID**
+
+:white_small_square: Üye Sayısı | **$membersCount**
+
+:white_small_square: Bot Sayısı | **$botCount**]
+
+$thumbnail[1;$serverIcon[$guildID]]
+
+$color[1;010101]
+
+$log[$serverName - Sunucusundan Çıkış Yaptım.]
+
+`
+
+})
+
+bot.guildJoinCommand({
+
+  channel: "951753441888313364",
+  code: `
+  $title[1;:inbox_tray: **$serverName[$guildID] - Giriş Yaptım** :inbox_tray:]
+  $description[1;
+  :white_small_square: Sunucu ID | **$guildID**
+  :white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
+  :white_small_square: Sahip ID | **$ownerID**
+  :white_small_square: Üye Sayısı | **$membersCount**
+  :white_small_square: Bot Sayısı | **$botCount**]
+  $thumbnail[1;$serverIcon[$guildID]]
+  $color[1;5f6eff]
+  $sendDM[{newEmbed:{author:Birisi Beni Sunucuna Ekledi}{description:Öncelikle Bu Metin Sadece Sana Gönderilmiştir, Sunucudaki Diğer Herhangibir Üyeye İletilmedi :)\n Destek Sunucumuz İçin-->  https://discord.gg/hZqr6hhfpk}{color:BLUE}{thumbnail:$userAvatar[$clientID]}{footer:$serverName - Giriş Yapıldı:$serverIcon[$guildID]}};$ownerID]
+  $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
+
+  `
+
+  })
+
+s
