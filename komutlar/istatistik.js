@@ -1,18 +1,18 @@
 module.exports = {
-name:"'xxxxxffg",
+name:"e",
 code:`
 $color[1;RANDOM]
 $author[1;$username[$clientID] Botun İstatistikleri;$userAvatar[$clientID]]
 
 $addField[1;**・Sürümler**;
-**<:emoji_75:963445326067425370> Node.js Sürüm : \`v16.12.0\`
-<:emoji_75:963445326067425370> Aoi.js Sürüm : \`v$packageVersion\`**
+**<:6149_discord:965276693604466758> Node.js Sürüm : \`v16.12.0\`
+<:6149_discord:965276693604466758> Aoi.js Sürüm : \`v$packageVersion\`**
 ]
 
 $addField[1;**・Hosting Detayları**;
-**<:emoji_75:963445326067425370> CPU Kullanımı : \`%$cpu\`
-<:emoji_75:963445326067425370> RAM Kullanımı : \`$ram\`
-<:emoji_75:963445326067425370> Depolama Kullanımı : \`25.93359375 MB\`**
+**<:6149_discord:965276693604466758> CPU Kullanımı : \`%$cpu\`
+<:6149_discord:965276693604466758> RAM Kullanımı : \`$ram\`
+<:6149_discord:965276693604466758> Depolama Kullanımı : \`25.93359375 MB\`**
 ]
 
 $addField[1;**・Değeleri**;
