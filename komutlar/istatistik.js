@@ -9,7 +9,7 @@ $addField[1;**<:aoijs:965279373005566052>・Sürümler**;
 > **<:6149_discord:965276693604466758> Aoi.js Sürüm : \`v$packageVersion\`**
 ]
 
-$addField[1;**・Hosting Detayları**;
+$addField[1;**<:hosting1:965280253205422131>・Hosting Detayları**;
 > **<:6149_discord:965276693604466758> CPU Kullanımı : \`%$cpu\`**
 > **<:6149_discord:965276693604466758> RAM Kullanımı : \`$ram\`**
 > **<:6149_discord:965276693604466758> Depolama Kullanımı : \`25.93359375 MB\`**
