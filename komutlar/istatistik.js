@@ -22,8 +22,8 @@ $addField[1;**・Değeleri**;
 <:emoji_77:963445382933807216> Toplam Kanal Sayım : \`$allChannelsCount\`**
 ]
 
-$addField[1;**・Geliştiricilerim**;
- **<:emoji_76:963445354626416650> $userTag[728155399655784488] - 728155399655784488**
+$addField[1;**・Geliştiricim**;
+ **<a:developer:928760319021555744> $userTag[728155399655784488] - 728155399655784488**
 ]
 $footer[1;Komut $userTag Tarafından Kullanıldı;$userAvatar[$authorID]]
 $addButton[1;Davet Et;link;https://discord.com/api/oauth2/authorize?client_id=933330103180623892&scope=bot+applications.commands&permissions=8;no;<:emoji_75:963445326067425370>] 
