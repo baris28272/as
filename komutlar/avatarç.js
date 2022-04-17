@@ -1,11 +1,10 @@
 module.exports = {
   name: "avatar",
   code: `
-$description[1;[Avatar Linki]($userAvatar[$mentioned[1;yes]])]
-$image[1;$userAvatar[$mentioned[1;yes]]]
-$footer[1;$userTag tarafından istendi.]
-$color[1;BLACK]
-$suppressErrors
+$author[1;$userTag;$userAvatar[$authorID]]
+$color[1;RANDOM]
+$description[1;**$userTag ın Avatarı
+$image[1;$userAvatar[$authorID]]]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 `,
 };

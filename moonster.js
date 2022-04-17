@@ -114,18 +114,6 @@ bot.leaveCommand({
   `,
 });
 
-bot.joinCommand({
-  channel: "$getServerVar[otorol]",
-  code: `
-  $giveRole[$guildID;$authorID;$getServerVar[otorolr]]
-$color[1;RANDOM]
-$author[1;$serverName;$serverIcon]
-$thumbnail[1;$userAvatar[$authorID]]
-$description[1;
-**<a:emoji_9221:938413467092811826> ・ [$userTag[$authorID]](https://discord.com/users/$authorID) Sunucuya Katıldı Ve Ona <@&$mentionedRoles[1]> Rolünü Verdim**]
-$footer[1;$userTag;$userAvatar[$authorID]]
-`,
-});
 
 bot.variables({
   aboneyt: "",
@@ -454,20 +442,7 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 `,
 });
 
-bot.variables({
-  snipe: "",
-  snipek: "",
-  snipekk: "",
-});
-bot.deletedCommand({
-  channel: "$channelID",
-  code: `
-$setServerVar[snipe;$message]
-$setServerVar[snipek;$channelID]
-$setServerVar[snipekk;$authorID]
-$onlyIf[$isBot[$authorID]==false;]
-`,
-});
+
 
 bot.variables({
   modlog: "",
@@ -515,7 +490,7 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 });
 
 bot.readyCommand({
-  channel: "961736238426116096",
+  channel: "965170082391146556",
   code: `
   $log[-------------Bot Açık---------]
   $wait[5s]
@@ -546,7 +521,7 @@ bot.variables({
 });
 
 bot.deletedCommand({
-  channel: "parzi",
+  channel: "moonster",
   code: ` $setServerVar[snipe3;$message] 
   $setServerVar[snipe2;$channelID] 
   $setServerVar[snipe1;$authorID] 
@@ -554,72 +529,9 @@ bot.deletedCommand({
 });
 bot.onMessageDelete();
 
-bot.command({
-  name: "davet",
-  code: `
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$color[1;RANDOM]
-$description[1;
-**<a:developer:928760319021555744>・Davet Linkim : [Beni Davet Etmek İçin Tıkla]($getBotInvite[admin])**
-**<a:developer:928760319021555744>・Oy Linkim : [Bana Oy Vermek İçin Tıkla](https://top.gg/bot/933330103180623892/vote)**
-**<a:developer:928760319021555744>・Destek Sunucum : [Destek Sunucuma Gelmek İçin Tıkla](https://discord.gg/3327ykB4fM)**
-]
-$footer[1;Bu Komut $username Tarafından Kullanıldı;$userAvatar[$authorID]]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
-
-`,
-});
 
 //----------------  EKLENDİM - ATILDM LOG ----------------//
 
-bot.guildLeaveCommand({
 
-channel: "951753460255182888",
 
-code: `
 
-$title[1;:outbox_tray: **$serverName - Çıkış Yaptım** :outbox_tray:]
-
-$description[1;
-
-:white_small_square: Sunucu ID | **$guildID**
-
-:white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
-
-:white_small_square: Sahip ID | **$ownerID**
-
-:white_small_square: Üye Sayısı | **$membersCount**
-
-:white_small_square: Bot Sayısı | **$botCount**]
-
-$thumbnail[1;$serverIcon[$guildID]]
-
-$color[1;010101]
-
-$log[$serverName - Sunucusundan Çıkış Yaptım.]
-
-`
-
-})
-
-bot.guildJoinCommand({
-
-  channel: "951753441888313364",
-  code: `
-  $title[1;:inbox_tray: **$serverName[$guildID] - Giriş Yaptım** :inbox_tray:]
-  $description[1;
-  :white_small_square: Sunucu ID | **$guildID**
-  :white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
-  :white_small_square: Sahip ID | **$ownerID**
-  :white_small_square: Üye Sayısı | **$membersCount**
-  :white_small_square: Bot Sayısı | **$botCount**]
-  $thumbnail[1;$serverIcon[$guildID]]
-  $color[1;5f6eff]
-  $sendDM[{newEmbed:{author:Birisi Beni Sunucuna Ekledi}{description:Öncelikle Bu Metin Sadece Sana Gönderilmiştir, Sunucudaki Diğer Herhangibir Üyeye İletilmedi :)\n Destek Sunucumuz İçin-->  https://discord.gg/hZqr6hhfpk}{color:BLUE}{thumbnail:$userAvatar[$clientID]}{footer:$serverName - Giriş Yapıldı:$serverIcon[$guildID]}};$ownerID]
-  $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
-
-  `
-
-  })
-
-s
