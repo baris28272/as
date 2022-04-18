@@ -533,11 +533,11 @@ bot.command({
 name:"saas-aç",
 $if:"v4",
 code:`
+$setServerVar[saas;açık]
 $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
-$setServerVar[saas;açık]
-$if[$getServerVar[saas]==açık]
+$if[$getServerVar[saas]==açık;]
 $author[1;$userTag;$userAvatar[$authorID]]
 $description[1;**Sa As Sistemi Zaten Kapalı**]
 $color[1;RANDOM]
@@ -555,7 +555,7 @@ $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Kapadın**]
 $setServerVar[saas;kapalı]
-$if[$getServerVar[saas]==kapalı]
+$if[$getServerVar[saas]==kapalı;]
 $reply[$messageID;{newEmbed:{description:**Sa As Sistemi Zaten Kapalı**}{color:RANDOM}}]
 $endif
 $onlyPerms[managemessages;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**]
