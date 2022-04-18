@@ -536,17 +536,26 @@ $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
 $setServerVar[saas;açık]
-$onlyPerms[managemessage;{newEmbed:{description:**$customEmoji[emoji_71]・<@$authorID> Bunu Kullanmak İçin \`Mesajları Yönet\` İznin Olmalı**}{color:RANDOM}}]
+$if[$getServerVar[saas;kapalı]]
+$reply[$messageID;{newEmbed:{description:**Sa As Sistemi Zaten Kapalı**}{color:RANDOM}}]
+$endif
+$if[$hasPerms[$guildID;$authorID;managemessages]==false]
+$endif
 `
 })
 
 bot.command({
 name:"saas-kapat",
+$if:"v4",
 code:`
 $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
-$description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
+$description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Kapadın**]
 $setServerVar[saas;kapalı]
-$onlyPerms[managemessage;{newEmbed:{description:**$customEmoji[emoji_71]・<@$authorID> Bunu Kullanmak İçin \`Mesajları Yönet\` İznin Olmalı**}{color:RANDOM}}]
+$if[$getServerVar[saas;kapalı]]
+$reply[$messageID;{newEmbed:{description:**Sa As Sistemi Zaten Kapalı**}{color:RANDOM}}]
+$endif
+$if[$hasPerms[$guildID;$authorID;managemessages]==false]
+$endi
 `
 })
