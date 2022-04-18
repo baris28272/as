@@ -554,3 +554,11 @@ $onlyPerms[managemessages;{newEmbed:{description:**$customEmoji[emoji_71] Bu Kom
 $suppressErrors
 `
 })
+
+bot.command({
+  name:"sa",
+  code:`
+  $onlyIf[$message!=sa;**$customEmoji[tatlimisir] <@$authorID> Aleyküm Selam Hoşgeldin**]
+  $onlyIf[$getServerVar[saas]==açık;]`,
+  nonPrefixed: true
+}) 
