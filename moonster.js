@@ -531,33 +531,26 @@ bot.onMessageDelete();
 
 bot.command({
 name:"saas-aç",
-$if:"v4",
 code:`
-$setServerVar[saas;açık]
 $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
-$if[$getServerVar[saas]==açık;]
-$author[1;$userTag;$userAvatar[$authorID]]
-$description[1;**Sa As Sistemi Zaten Kapalı**]
-$color[1;RANDOM]
-$endif
-$onlyPerms[managemessages;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**]
-
+$setServerVar[saas;açık]
+$onlyIf[$getServerVar[saas]!=açık;{newEmbed:{description:**$customEmoji[emoji_71] <@$authorID>,Selam Sistemi Zaten Aktif Kapatmak İçin \`?saas-kapat\`**}{color:RANDOM}}]
+$onlyPerms[managemessages;{newEmbed:{description:**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**}{color:RANDOM}}]
+$suppressErrors
 `
 })
 
 bot.command({
 name:"saas-kapat",
-$if:"v4",
 code:`
 $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Kapadın**]
 $setServerVar[saas;kapalı]
-$if[$getServerVar[saas]==kapalı;]
-$reply[$messageID;{newEmbed:{description:**Sa As Sistemi Zaten Kapalı**}{color:RANDOM}}]
-$endif
-$onlyPerms[managemessages;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**]
+$onlyIf[$getServerVar[saas]!=kapalı;{newEmbed:{description:**$customEmoji[emoji_71] <@$authorID>,Selam Sistemi Zaten Kapalı Açmak İçin \`?saas-aç\`**}{color:RANDOM}}]
+$onlyPerms[managemessages;{newEmbed:{description:**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**}{color:RANDOM}}]
+$suppressErrors
 `
 })
