@@ -59,8 +59,7 @@ bot.variables({
   afk: "",
   afkl: "",
   afkl: "",
-  prefix: "+",
-  saas: "kapalı",
+  prefix: "?",
   mrol: "",
   modlog: "",
   arol: "",
@@ -536,14 +535,13 @@ bot.onMessageDelete();
 
 
 //sa-as sistemi
-//aç
 bot.interactionCommand({
   name: "DarkLonSaAsAç",
   prototype: "button",
   $if: "v4",
   code: `
 $setServerVar[saas;açık]
-$interactionReply[;{newEmbed:{description:・Sistem Başarı İle **Aktif** Hale Getirildi!}{delete:3}{color:GREEN}};};;;yes]
+$interactionReply[;{newEmbed:{description:$customEmoji[emoji_70]・Sistem Başarı İle **Aktif** Hale Getirildi!}{delete:3}{color:GREEN}};};;;yes]
 
 $if[$getServerVar[saas]==açık]
 $interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Sunucuda Sistem Zaten **Aktif** Durumda!}{delete:3}{color:ff0000}};};;;yes]
@@ -556,7 +554,7 @@ $endif
   })
 
 
-//kapat
+
 bot.interactionCommand({
   name: "DarkLonSaAsKapat",
   prototype: "button",
