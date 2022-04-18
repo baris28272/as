@@ -529,46 +529,24 @@ bot.deletedCommand({
 bot.onMessageDelete();
 
 
-//----------------  EKLENDİM - ATILDM LOG ----------------//
-
-
-
-
-//sa-as sistemi
-bot.interactionCommand({
-  name: "DarkLonSaAsAç",
-  prototype: "button",
-  $if: "v4",
-  code: `
+bot.command({
+name:"saas-aç",
+code:`
+$author[1;$userTag;$userAvatar[$authorID]]
+$color[1;RANDOM]
+$description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
 $setServerVar[saas;açık]
-$interactionReply[;{newEmbed:{description:$customEmoji[emoji_70]・Sistem Başarı İle **Aktif** Hale Getirildi!}{delete:3}{color:GREEN}};};;;yes]
-
-$if[$getServerVar[saas]==açık]
-$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Sunucuda Sistem Zaten **Aktif** Durumda!}{delete:3}{color:ff0000}};};;;yes]
-$endif
-
-$if[$hasPerms[$guildID;$authorID;managemessages]==false]
-$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Komutu Sadece **Mesajları Yönet** İznine Sahip Kişiler Kullanabilir!}{color:ff0000}};};;;yes]
-$endif
-  `
-  })
-
-
-
-bot.interactionCommand({
-  name: "DarkLonSaAsKapat",
-  prototype: "button",
-  $if: "v4",
-  code: `
-$setServerVar[saas;kapalı]
-$interactionReply[;{newEmbed:{$customEmoji[emoji_70]・description:Sistem Başarı İle **Devre Dışı** Duruma Getirildi!}{delete:3}{color:RED}};};;;yes]
-
-$if[$getServerVar[saas]==kapalı]
-$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Sunucuda Sistem Zaten **Devre Dışı** Durumda!}{delete:3}{color:ff0000}};};;;yes]
-$endif
-
-$if[$hasPerms[$guildID;$authorID;managemessages]==false]
-$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Komutu Sadece **Mesajları Yönet** İznine Sahip Kişiler Kullanabilir!}{color:ff0000}};};;;yes]
-$endif
+$onlyPerms[managemessage;{newEmbed:{description:**$customEmoji[emoji_71]・<@$authorID> Bunu Kullanmak İçin \`Mesajları Yönet\` İznin Olmalı**}{color:RANDOM}}]
 `
-  }) 
+})
+
+bot.command({
+name:"saas-kapat",
+code:`
+$author[1;$userTag;$userAvatar[$authorID]]
+$color[1;RANDOM]
+$description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
+$setServerVar[saas;kapalı]
+$onlyPerms[managemessage;{newEmbed:{description:**$customEmoji[emoji_71]・<@$authorID> Bunu Kullanmak İçin \`Mesajları Yönet\` İznin Olmalı**}{color:RANDOM}}]
+`
+})
