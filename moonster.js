@@ -535,3 +535,42 @@ bot.onMessageDelete();
 
 
 
+//sa-as sistemi
+//aç
+bot.interactionCommand({
+  name: "DarkLonSaAsAç",
+  prototype: "button",
+  $if: "v4",
+  code: `
+$setServerVar[saas;açık]
+$interactionReply[;{newEmbed:{description:・Sistem Başarı İle **Aktif** Hale Getirildi!}{delete:3}{color:GREEN}};};;;yes]
+
+$if[$getServerVar[saas]==açık]
+$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Sunucuda Sistem Zaten **Aktif** Durumda!}{delete:3}{color:ff0000}};};;;yes]
+$endif
+
+$if[$hasPerms[$guildID;$authorID;managemessages]==false]
+$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Komutu Sadece **Mesajları Yönet** İznine Sahip Kişiler Kullanabilir!}{color:ff0000}};};;;yes]
+$endif
+  `
+  })
+
+
+//kapat
+bot.interactionCommand({
+  name: "DarkLonSaAsKapat",
+  prototype: "button",
+  $if: "v4",
+  code: `
+$setServerVar[saas;kapalı]
+$interactionReply[;{newEmbed:{$customEmoji[emoji_70]・description:Sistem Başarı İle **Devre Dışı** Duruma Getirildi!}{delete:3}{color:RED}};};;;yes]
+
+$if[$getServerVar[saas]==kapalı]
+$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Sunucuda Sistem Zaten **Devre Dışı** Durumda!}{delete:3}{color:ff0000}};};;;yes]
+$endif
+
+$if[$hasPerms[$guildID;$authorID;managemessages]==false]
+$interactionReply[;{newEmbed:{description::exclamation:・<@$authorID> Bu Komutu Sadece **Mesajları Yönet** İznine Sahip Kişiler Kullanabilir!}{color:ff0000}};};;;yes]
+$endif
+`
+  }) 
