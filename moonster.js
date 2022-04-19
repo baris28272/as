@@ -562,3 +562,9 @@ bot.command({
   $onlyIf[$getServerVar[saas]==açık;]`,
   nonPrefixed: true
 }) 
+
+
+
+
+
+
