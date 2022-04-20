@@ -4,7 +4,7 @@ module.exports = {
 $color[1;00F124]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $addField[1;**<a:tac:945816748828028938>・Bot Owner**;
-\`?eval | ?karaliste al | ?para-ekle | ?para-sil | ?dev-ver | ?dev-çıkar | ?elmas-sil | ?altın-sil | ?elmas-ekle | ?altın-ekle | ?reboot
+\`$getServerVar[prefix]eval | $getServerVar[prefix]karaliste al | $getServerVar[prefix]para-ekle | $getServerVar[prefix]para-sil | $getServerVar[prefix]dev-ver | $getServerVar[prefix]dev-çıkar | $getServerVar[prefix]elmas-sil | $getServerVar[prefix]altın-sil | ?elmas-ekle | ?altın-ekle | ?reboot
 \`
 ]
 

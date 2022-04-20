@@ -2,7 +2,7 @@ var fs = require("fs");
 const aoijs = require("aoi.js");
 const bot = new aoijs.Bot({
   token: process.env.token,
-  prefix: "?",
+  prefix: "$getserverVar[prefix]",
   intents: "all",
   fetchInvites: true,
 });
