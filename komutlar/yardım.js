@@ -31,4 +31,4 @@ $footer[1;Bu Komut $userTag[$authorID] Tarafından Kullanıldı;$userAvatar[$aut
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 `,
-};
+  }
