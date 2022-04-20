@@ -564,6 +564,26 @@ bot.command({
 }) 
 
 
+bot.command({
+  name:"selam",
+  code:`
+  $onlyIf[$message!=selam;**$customEmoji[tatlimisir] <@$authorID> Aleyküm Selam Hoşgeldin**]
+  $onlyIf[$getServerVar[saas]==açık;]`,
+  nonPrefixed: true
+}) 
+
+bot.command({
+  name:"selamun aleyküm",
+  code:`
+  $onlyIf[$message!=selamun aleyküm;**$customEmoji[tatlimisir] <@$authorID> Aleyküm Selam Hoşgeldin**]
+  $onlyIf[$getServerVar[saas]==açık;]`,
+  nonPrefixed: true
+}) 
+
+
+
+
+
 
 
 
