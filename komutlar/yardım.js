@@ -18,7 +18,7 @@ $addField[1;**<a:parack:927001644971995166>・Ekonomi**;
 ] 
 
 $addField[1;**<:certificatemod:945700629278498847>・Moderasyon**;
-\`$getServerVar[prefix]nuke | $getServerVar[prefix]hgbb-ayarla | $getServerVar[prefix]sil | $getServerVar[prefix]ban | $getServerVar[prefix]unban | $getServerVar[prefix]banlist | $getServerVar[prefix]oylama | $getServerVar[prefix]kick | $getServerVar[prefix]rol-ver | $getServerVar[prefix]rol-al | $getServerVar[prefix]timeout | $getServerVar[prefix]snipe | $getServerVar[prefix]prefix-ayarla
+\`$getServerVar[prefix]nuke | $getServerVar[prefix]hgbb-ayarla | $getServerVar[prefix]sil | $getServerVar[prefix]ban | $getServerVar[prefix]unban | $getServerVar[prefix]banlist | $getServerVar[prefix]oylama | $getServerVar[prefix]kick | $getServerVar[prefix]rol-ver | $getServerVar[prefix]rol-al | $getServerVar[prefix]timeout | $getServerVar[prefix]snipe
 \`
 ]
 $addField[1;**<:emoji_62:933485235126034504>・Kullanıcı**;
