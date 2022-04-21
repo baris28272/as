@@ -4,7 +4,7 @@ code:`
 $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[tatlimisir] <@$authorID> Başarıyla Sese Girdim**]
-$joinVc
+$joinVc[$voiceID[$authorID]]
 $suppressErrors
 `
   }
