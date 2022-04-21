@@ -9,7 +9,7 @@ $suppressErrors[1;**<:emoji_71:917309220687314966> | $username Yatıracağın Mi
 $onlyIf[$message<=$getGlobalUserVar[para;$authorID];**$customEmoji[emoji_71] | Cüzdanında Para Yok**]
 $color[1;RANDOM]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$description[1;**<:emoji_70:917309183341236244> | \`$userTag[$authorID]\`Başarıyla Bankanıza $message 💵 Para Yatırdınız**]
+$description[1;**<:emoji_70:917309183341236244> | \`$userTag[$authorID]\` Başarıyla Bankanıza $message 💵 Para Yatırdınız**]
 $onlyIf[$noMentionMessage>=0;**<:emoji_71:917309220687314966> | $username Sayıyı düzgün yaz.**]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;**_\`$getGlobalUserVar[ksebep;$authorID]\`_ sebebinden karalistedesiniz.**] 
 $cooldown[5s;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`5 Saniye\` Beklemelisin.**] 
