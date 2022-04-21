@@ -1,3 +1,4 @@
+
 var fs = require("fs");
 const aoijs = require("aoi.js");
 const bot = new aoijs.Bot({
@@ -581,6 +582,7 @@ bot.command({
 }) 
 
 
+
 const voice = new aoijs.Voice(bot, {
   soundcloud: {
     //clientId: "SoundCloud clientID", //remove the double slash if you want soundcloud
@@ -590,9 +592,4 @@ const voice = new aoijs.Voice(bot, {
     enabled: true,
   },
 }, false); //true or false for pruneMusic
-
-
-
-
-
 
