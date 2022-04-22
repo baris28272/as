@@ -7,6 +7,7 @@ $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;**$userTag[$authorID] İsimli Kullanıcı \`$message[1]\` Sebebinden Destek İstedi.**]
 $channelSendMessage[$channelID;**$customEmoji[emoji_70]・<@$authorID> Destek Mesajınız Geliştiricime İletilmiştir En Yakın Zamanda Size Geri Dönüş Yapacaktır.**]
 $argsCheck[1;**$customEmoji[emoji_71]・<@$authorID> Bir Mesaj Belirtmelisin.**] 
-  $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$cooldown[10s;**$customEmoji[emoji_71] <@$authorID> Bu Komutu Kullanmak İçin \`10 Saniye\` Beklemelisin**]
+$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
   `,
 };
