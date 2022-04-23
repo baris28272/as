@@ -197,7 +197,7 @@ bot.command({
 $color[1;RED]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;
-・ **Geliştiricim** : **$userTag[728155399655784488]**
+・ **Geliştiricim** : **$userTag[855747867074494544]**
 ・ **Sunucu Sayım** : **$serverCount**
 ・ **Kullanıcı Sayım** : **$allMembersCount**
 ・ **Prefix'im** : **$getServerVar[prefix]**
@@ -333,7 +333,7 @@ $customEmoji[emoji_71] | \`$username[$authorID]\` İsimli Kullanıcı \`$usernam
 $setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage];$mentioned[1]]
 $onlyIf[$isNumber[$noMentionMessage]!=false;$customEmoji[emoji_71] | Sileceğim Miktar Para Değil! D-Dostum Naptın Sen :D]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz 
-
+$onlyForIDs[855747867074494544;]
 `,
 });
 
@@ -345,7 +345,7 @@ $description[1;
 $customEmoji[emoji_71] | \`$username[$authorID]\` İsimli Kullanıcı \`$username[$mentioned[1]]\` İsimli Kullanıcıdan \`$numberSeparator[$noMentionMessage\` Miktarda Elmas Sildi]
 $setGlobalUserVar[elmas;$sub[$getGlobalUserVar[elmas;$mentioned[1]];$noMentionMessage];$mentioned[1]]
 $onlyIf[$isNumber[$noMentionMessage]!=false;$customEmoji[emoji_71] | Sileceğim Miktar Elmas Değil! D-Dostum Naptın Sen :D]
-$onlyForIDs[$botOwnerID;728155399655784488;]
+$onlyForIDs[$botOwnerID;855747867074494544;728155399655784488;]
 `,
 });
 
@@ -357,7 +357,7 @@ $description[1;
 $customEmoji[emoji_71] | \`$username[$authorID]\` İsimli Kullanıcı \`$username[$mentioned[1]]\` İsimli Kullanıcıdan \`$numberSeparator[$noMentionMessage;,]\` Miktarda Altın Sildi]
 $setGlobalUserVar[altın;$sub[$getGlobalUserVar[altın;$mentioned[1]];$noMentionMessage];$mentioned[1]]
 $onlyIf[$isNumber[$noMentionMessage]!=false;$customEmoji[emoji_71] | Sileceğim Miktar Altın Değil! D-Dostum Naptın Sen :D]
-$onlyForIDs[$botOwnerID;728155399655784488;]
+$onlyForIDs[$botOwnerID;855747867074494544;728155399655784488;]
 
 `,
 });

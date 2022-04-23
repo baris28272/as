@@ -23,7 +23,7 @@ $addField[1;**・Değerleri**;
 ]
 
 $addField[1;**<a:tac:945816748828028938>・Geliştiricim**;
-> **<:developerr:910821172877344778> $userTag[728155399655784488] - 728155399655784488**
+> **<:developerr:910821172877344778> $userTag[855747867074494544] - 855747867074494544**
 ]
 $footer[1;Komut $userTag Tarafından Kullanıldı;$userAvatar[$authorID]]
 
