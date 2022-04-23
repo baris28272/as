@@ -26,7 +26,7 @@ for (const file of reader) {
 
 bot.variables({
   bahis: "0",
-  maaşş: "0",
+  maaş: "0",
   meslekp: "Bulunmuyor",
   bughunter: "Bulunmuyor",
   not: "",
@@ -188,8 +188,7 @@ $footer[1;$username[$mentioned[1;yes]];$userAvatar[$mentioned[1]]]
 bot.variables({
   developer: "Bulunmuyor",
   staf: "Bulunmuyor",
-  meslek: "Yok",
-  maaş: "0",
+  meslek: "Bulunmuyor",
 });
 
 bot.command({
