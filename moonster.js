@@ -632,3 +632,14 @@ bot.guildJoinCommand({
   $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
   `
   })
+
+
+bot.interactionCommand({
+  name:"test",
+  type:"interaction",
+  prototype:"selectmenu",
+  code:`
+  $interactionReply[;{newEmbed:{description:a}{color:RANDOM}};;;;yes]
+  $onlyIf[$interactionData[values[0]]==0;]
+  `
+  })
