@@ -2,7 +2,7 @@ module.exports = {
 name:"meslek-seç",
 $if:"v4",
 code:`
-$if[$toLowercase[$message]==Polis]
+$if[$message==Polis]
 $author[1;$userTag;$userAvatar[$authorID]]
 $color[1;RANDOM]
 $description[1;**$customEmoji[emoji_70] <@$authorID> Başarıyla Polis Oldun Ve Maaşın [$abbreviate[$getGlobalUserVar[maaş]]]($getBotInvite[admin]) **]
