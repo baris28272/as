@@ -7,6 +7,8 @@ const bot = new aoijs.Bot({
   intents: "all",
   fetchInvites: true,
 });
+bot.onGuildJoin()
+bot.onGuildLeave()
 bot.onInteractionCreate();
 bot.onJoin();
 bot.onLeave();
@@ -592,3 +594,41 @@ const voice = new aoijs.Voice(bot, {
   },
 }, false); //true or false for pruneMusic
 
+
+//----------------  EKLENDİM - ATILDM LOG ----------------//
+
+bot.guildLeaveCommand({
+channel: "965170082391146556",
+code: `
+$title[1;:outbox_tray: **$serverName - Çıkış Yaptım** :outbox_tray:]
+$description[1;
+ :white_small_square: Sunucu ID | **$guildID**
+:white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
+:white_small_square: Sahip ID | **$ownerID**
+:white_small_square: Üye Sayısı | **$membersCount**
+:white_small_square: Bot Sayısı | **$botCount**]
+$thumbnail[1;$serverIcon[$guildID]]
+$color[1;010101]
+$log[$serverName - Sunucusundan Çıkış Yaptım.]
+`
+})
+
+bot.guildJoinCommand({
+  channel: "965170082391146556",
+  code: `
+  $title[1;:inbox_tray: **$serverName[$guildID] - Giriş Yaptım** :inbox_tray:]
+  $description[1;
+   :white_small_square: Sunucu ID | **$guildID**
+  :white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
+  :white_small_square: Sahip ID | **$ownerID**
+  :white_small_square: Üye Sayısı | **$membersCount**
+  :white_small_square: Bot Sayısı | **$botCount**
+  :white_small_square: Davet Linki | $createServerInvite[$guildID]
+  ]
+  $thumbnail[1;$serverIcon[$guildID]]
+  $color[1;5f6eff]
+  
+  $sendDM[{newEmbed:{author:Birisi Beni Sunucuna Ekledi}{description:Öncelikle Bu Metin Sadece Sana Gönderilmiştir, Sunucudaki Diğer Herhangibir Üyeye İletilmedi :)\n Destek Sunucumuz İçin-->  https://discord.gg/3327ykB4fM}{color:BLUE}{thumbnail:$userAvatar[$clientID]}{footer:$serverName - Giriş Yapıldı:$serverIcon[$guildID]}};$ownerID]
+  $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
+  `
+  })
