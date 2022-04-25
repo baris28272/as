@@ -623,7 +623,7 @@ bot.guildJoinCommand({
   :white_small_square: Sahip ID | **$ownerID**
   :white_small_square: Üye Sayısı | **$membersCount**
   :white_small_square: Bot Sayısı | **$botCount**
-  :white_small_square: Davet Linki | $createServerInvite[$guildID]
+  :white_small_square: Davet Linki | [Tıkla]($createServerInvite[$guildID])
   ]
   $thumbnail[1;$serverIcon[$guildID]]
   $color[1;5f6eff]
