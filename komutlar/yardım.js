@@ -3,17 +3,17 @@ module.exports = {
   code: `
 $color[1;00F124]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$addField[1;**<a:tac:945816748828028938>・Bot Owner**;
+$addField[1;**<a:tac:968591488982319144>・Bot Owner**;
 \`$getServerVar[prefix]eval | $getServerVar[prefix]karaliste al | $getServerVar[prefix]para-ekle | $getServerVar[prefix]para-sil | $getServerVar[prefix]dev-ver | $getServerVar[prefix]dev-çıkar | $getServerVar[prefix]elmas-sil | $getServerVar[prefix]altın-sil | $getServerVar[prefix]elmas-ekle | $getServerVar[prefix]altın-ekle | $getServerVar[prefix]reboot
 \`
 ]
 
-$addField[1;**<:emoji_66:951850637006635058>・Eğlence**;
+$addField[1;**<:tatlimisir:908393466847985726>・Eğlence**;
 \`$getServerVar[prefix]aşk-ölçer | $getServerVar[prefix]türk | $getServerVar[prefix]kaçcm | $getServerVar[prefix]öp | $getServerVar[prefix]seviyor-sevmiyor | $getServerVar[prefix]gay
 \`
 ]
 
-$addField[1;**<a:parack:927001644971995166>・Ekonomi**;
+$addField[1;**<a:parack:968590882188181524>・Ekonomi**;
 \`$getServerVar[prefix]param | $getServerVar[prefix]yatır | $getServerVar[prefix]çek | $getServerVar[prefix]para-gönder | $getServerVar[prefix]çalış | $getServerVar[prefix]dilen | $getServerVar[prefix]balık-tut | $getServerVar[prefix]odun-kes | $getServerVar[prefix]kazı-kazan | $getServerVar[prefix]günlük | $getServerVar[prefix]haftalık | $getServerVar[prefix]maden-kaz | $getServerVar[prefix]elmas-sat | $getServerVar[prefix]altın-sat | $getServerVar[prefix]elmas-gönder | $getServerVar[prefix]altın-gönder | $getServerVar[prefix]rozet-al
 \`
 ] 
