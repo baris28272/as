@@ -169,7 +169,7 @@ $addField[1;**・Rozetler**;
 
 $addField[1;**・Bakiye Bilgileri**;
 
-> ・**Üzerindeki Para Miktarı** : [$abbreviate[$getGlobalUserVar[para;$mentioned[1;yes]]]]($getBotInvite[admin]) <:emoji_74:963445164251181096>
+> ・**Üzerindeki Para Miktarı** : [$abbreviate[$getGlobalUserVar[para;$mentioned[1;yes]]]]($getBotInvite[admin]) 
 > ・**Bankadaki Para Miktarı** : [$abbreviate[$getGlobalUserVar[banka;$mentioned[1;yes]]]]($getBotInvite[admin]) 
 > ・**Üzerindeki Altın Miktarı** : [$abbreviate[$getGlobalUserVar[altın;$mentioned[1;yes]]]]($getBotInvite[admin])
 > ・**Üzerindeki Elmas Miktarı** : [$abbreviate[$getGlobalUserVar[elmas;$mentioned[1;yes]]]]($getBotInvite[admin])
