@@ -27,7 +27,7 @@ $addField[1;**<:emoji_62:933485235126034504>・Genel**;
 \`$getServerVar[prefix]avatar | $getServerVar[prefix]kurucu | $getServerVar[prefix]sunucu-bilgi | $getServerVar[prefix]hatırlatıcı-oluştur | ?destek | $getServerVar[prefix]sunucu-avatar | $getServerVar[prefix]oy-ver
 \`
   ]
-$image[1;https://media.discordapp.net/attachments/938892356424441987/958810493735297024/standard.gif]
+$image[1;https://media.discordapp.net/attachments/968199095992860742/968557465333534750/standard.gif]
 $footer[1;Bu Komut $userTag[$authorID] Tarafından Kullanıldı;$userAvatar[$authorID]]
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
