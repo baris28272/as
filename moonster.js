@@ -377,15 +377,15 @@ bot.variables({
 bot.command({
   name: "rol-ver",
   code: `
-$giveRole[$guildID;$mentioned[1];$noMentionMessage]
+$giveRole[$guildID;$mentioned[1];$mentionedRoles[1]]
 $color[1;RANDOM]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $thumbnail[1;$userAvatar[$mentioned[1]]]
 $description[1;
-**$customEmoji[emoji_70] | \`$userTag[$authorID]\` Başarıyla \`$userTag[$mentioned[1]]\` Kişisine <@&$noMentionMessage> Rolünü Verdim**
+**$customEmoji[emoji_70] | \`$userTag[$authorID]\` Başarıyla \`$userTag[$mentioned[1]]\` Kişisine <@&$mentionedRoles[1]> Rolünü Verdim**
 ]
-$onlyPerms[manageroles;**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**]
-$suppressErrors[1;]
+$onlyPerms[manageroles;{newEmbed:{description:**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**}{color:RANDOM}}]
+$suppressErrors
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 
@@ -396,15 +396,15 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 bot.command({
   name: "rol-al",
   code: `
-$takeRole[$guildID;mentioned[1];$noMentionMessage]
+$takeRole[$guildID;mentioned[1];$mentionedRoles[1]]
 $color[1;RANDOM]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $thumbnail[1;$userAvatar[$mentioned[1]]]
 $description[1;
-**$customEmoji[emoji_70] | \`$userTag[$authorID]\` Başarıyla \`$userTag[$mentioned[1]]\` Kişisinden <@&$noMentionMessage> Rolü Aldım**
+**$customEmoji[emoji_70] | \`$userTag[$authorID]\` Başarıyla \`$userTag[$mentioned[1]]\` Kişisinden <@&$mentionedRoles[1]> Rolü Aldım**
 ]
-$onlyPerms[manageroles;**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**]
-$suppressErrors[1;]
+$onlyPerms[manageroles;{newEmbed:{description:**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**}{color:RANDOM}}]
+$suppressErrors
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 
@@ -602,7 +602,7 @@ channel: "965170082391146556",
 code: `
 $title[1;:outbox_tray: **$serverName - Çıkış Yaptım** :outbox_tray:]
 $description[1;
- :white_small_square: Sunucu ID | **$guildID**
+:white_small_square: Sunucu ID | **$guildID**
 :white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
 :white_small_square: Sahip ID | **$ownerID**
 :white_small_square: Üye Sayısı | **$membersCount**
@@ -618,7 +618,7 @@ bot.guildJoinCommand({
   code: `
   $title[1;:inbox_tray: **$serverName[$guildID] - Giriş Yaptım** :inbox_tray:]
   $description[1;
-   :white_small_square: Sunucu ID | **$guildID**
+    :white_small_square: Sunucu ID | **$guildID**
   :white_small_square: Sahibi | **$username[$ownerID]#$discriminator[$ownerID]**
   :white_small_square: Sahip ID | **$ownerID**
   :white_small_square: Üye Sayısı | **$membersCount**
@@ -630,16 +630,5 @@ bot.guildJoinCommand({
   
   $sendDM[{newEmbed:{author:Birisi Beni Sunucuna Ekledi}{description:Öncelikle Bu Metin Sadece Sana Gönderilmiştir, Sunucudaki Diğer Herhangibir Üyeye İletilmedi :)\n Destek Sunucumuz İçin-->  https://discord.gg/3327ykB4fM}{color:BLUE}{thumbnail:$userAvatar[$clientID]}{footer:$serverName - Giriş Yapıldı:$serverIcon[$guildID]}};$ownerID]
   $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
-  `
-  })
-
-
-bot.interactionCommand({
-  name:"test",
-  type:"interaction",
-  prototype:"selectmenu",
-  code:`
-  $interactionReply[;{newEmbed:{description:a}{color:RANDOM}};;;;yes]
-  $onlyIf[$interactionData[values[0]]==0;]
   `
   })

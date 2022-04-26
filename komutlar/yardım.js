@@ -4,7 +4,7 @@ module.exports = {
 $color[1;00F124]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $addField[1;**<a:tac:968591488982319144>・Bot Owner**;
-\`$getServerVar[prefix]eval | $getServerVar[prefix]karaliste al | $getServerVar[prefix]para-ekle | $getServerVar[prefix]para-sil | $getServerVar[prefix]dev-ver | $getServerVar[prefix]dev-çıkar | $getServerVar[prefix]elmas-sil | $getServerVar[prefix]altın-sil | $getServerVar[prefix]elmas-ekle | $getServerVar[prefix]altın-ekle | $getServerVar[prefix]reboot
+\`$getServerVar[prefix]eval | $getServerVar[prefix]karaliste al | $getServerVar[prefix]para-ekle | $getServerVar[prefix]para-sil | $getServerVar[prefix]elmas-sil | $getServerVar[prefix]altın-sil | $getServerVar[prefix]elmas-ekle | $getServerVar[prefix]altın-ekle
 \`
 ]
 
@@ -14,7 +14,7 @@ $addField[1;**<:tatlimisir:908393466847985726>・Eğlence**;
 ]
 
 $addField[1;**<a:parack:968590882188181524>・Ekonomi**;
-\`$getServerVar[prefix]param | $getServerVar[prefix]yatır | $getServerVar[prefix]çek | $getServerVar[prefix]para-gönder | $getServerVar[prefix]çalış | $getServerVar[prefix]dilen | $getServerVar[prefix]balık-tut | $getServerVar[prefix]odun-kes | $getServerVar[prefix]kazı-kazan | $getServerVar[prefix]günlük | $getServerVar[prefix]haftalık | $getServerVar[prefix]maden-kaz | $getServerVar[prefix]elmas-sat | $getServerVar[prefix]altın-sat | $getServerVar[prefix]elmas-gönder | $getServerVar[prefix]altın-gönder | $getServerVar[prefix]rozet-al
+\`$getServerVar[prefix]param | $getServerVar[prefix]yatır | $getServerVar[prefix]çek | $getServerVar[prefix]para-gönder | $getServerVar[prefix]çalış | $getServerVar[prefix]dilen | $getServerVar[prefix]balık-tut | $getServerVar[prefix]odun-kes | $getServerVar[prefix]kazı-kazan | $getServerVar[prefix]günlük | $getServerVar[prefix]haftalık | $getServerVar[prefix]maden-kaz | $getServerVar[prefix]elmas-sat | $getServerVar[prefix]altın-sat | $getServerVar[prefix]elmas-gönder | $getServerVar[prefix]altın-gönder | $getServerVar[prefix]rozet-al | $getServerVar[prefix]çek-hepsi | $getServerVar[prefix]yatır-hepsi
 \`
 ] 
 
@@ -23,7 +23,7 @@ $addField[1;**<:certificatemod:945700629278498847>・Moderasyon**;
 \`
 ]
 
-$addField[1;**<:emoji_62:933485235126034504>・Genel**;
+$addField[1;**<:boteglence:968593132453261322>・Genel**;
 \`$getServerVar[prefix]avatar | $getServerVar[prefix]kurucu | $getServerVar[prefix]sunucu-bilgi | $getServerVar[prefix]hatırlatıcı-oluştur | ?destek | $getServerVar[prefix]sunucu-avatar | $getServerVar[prefix]oy-ver
 \`
   ]
