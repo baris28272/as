@@ -90,6 +90,7 @@ bot.variables({
   ticketcategory: "",
   ticketsorumlusu: "",
   ticket: "kapalı",
+  küfürengell:"Kapalı"
 });
 
 bot.joinCommand({
