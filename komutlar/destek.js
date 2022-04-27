@@ -11,3 +11,4 @@ $cooldown[10s;**$customEmoji[emoji_71] <@$authorID> Bu Komutu Kullanmak İçin \
 $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
   `,
 };
+
