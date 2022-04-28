@@ -157,8 +157,6 @@ $onlyIf[$checkContains[$message;<@$clientID>]==true;]
 });
 
 
-
-
 bot.variables({
   devpara: "Yok",
   pray: "0",
@@ -184,29 +182,11 @@ bot.variables({
 
 
 
-
-
-
-
-
-
 bot.variables({
   modlog: "",
   premiumx: "Bulunmuyor",
 });
 
-bot.command({
-  name: "seviyor-sevmiyor",
-  code: `
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$description[1;
-**<@$authorID>,<@$mentioned[1]> Kişisi Seni $randomText[Seviyor ❤;Sevmiyor 💔]**]
-$suppressErrors[1;{author:$userTag[$authorID]:$userAvatar[$authorID]}{description:**$customEmoji[emoji_71] | Dostum Birisini Etiketlemelisin**}{color:RANDOM}]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
-
-`,
-});
 
 bot.variables({
   inviteenabled: "kapalı",
@@ -276,31 +256,7 @@ bot.deletedCommand({
 bot.onMessageDelete();
 
 
-bot.command({
-name:"saas-aç",
-code:`
-$author[1;$userTag;$userAvatar[$authorID]]
-$color[1;RANDOM]
-$description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Aktif Ettin**]
-$setServerVar[saas;açık]
-$onlyIf[$getServerVar[saas]!=açık;{newEmbed:{description:**$customEmoji[emoji_71] <@$authorID>,Selam Sistemi Zaten Aktif Kapatmak İçin \`?saas-kapat\`**}{color:RANDOM}}]
-$onlyPerms[managemessages;{newEmbed:{description:**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**}{color:RANDOM}}]
-$suppressErrors
-`
-})
 
-bot.command({
-name:"saas-kapat",
-code:`
-$author[1;$userTag;$userAvatar[$authorID]]
-$color[1;RANDOM]
-$description[1;**$customEmoji[emoji_70]・Başarıyla Sa As Sistemini Kapadın**]
-$setServerVar[saas;kapalı]
-$onlyIf[$getServerVar[saas]!=kapalı;{newEmbed:{description:**$customEmoji[emoji_71] <@$authorID>,Selam Sistemi Zaten Kapalı Açmak İçin \`?saas-aç\`**}{color:RANDOM}}]
-$onlyPerms[managemessages;{newEmbed:{description:**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`Mesajları Yönet\` Yetkin Olmalı**}{color:RANDOM}}]
-$suppressErrors
-`
-})
 
 bot.command({
   name:"sa",

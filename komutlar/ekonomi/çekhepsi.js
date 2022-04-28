@@ -1,4 +1,4 @@
-module.e{
+module.exports = {
   name: "çek-hepsi",
   code: `
 $setGlobalUserVar[banka;$sub[$getGlobalUserVar[banka;$authorID];$getGlobalUserVar[banka;$authorID]];$authorID]
