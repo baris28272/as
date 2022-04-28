@@ -156,80 +156,8 @@ $onlyIf[$checkContains[$message;<@$clientID>]==true;]
   nonPrefixed: true,
 });
 
-bot.variables({
-  kklog: "",
-});
-
-bot.command({
-  name: "yaş-hesapla",
-  code: `
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]] 
-$title[1;Yaş Hesaplama İşlemi]
-$description[1;<@$authorID>, sen $sub[$year;$message[1]] yaşındasın.]
-$footer[1;$username[$authorID]]
-$suppressErrors[1;{description:<@$authorID>, doğum yılını yaz.}{color:RANDOM}]
-$onlyIf[$getGlobalUserVar[premiumx;$authorID]==Var;**$customEmoji[emoji_71] | Bu komutu kullanmak için premium avantajlarına sahip olman gerekiyor.**] 
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz 
 
 
-`,
-});
-
-
-
-
-
-bot.variables({
-  küfür: "kapalı",
-  küfürayarlayan: "",
-  küfürs: "1",
-  link: "kapalı",
-  linkayarlayan: "",
-  rick_tick: "", /// tik emoji id
-  rick_carpi: "", //carpi emiji id
-  footer: "",
-  renk: "",
-  admin: "",
-});
-
-bot.command({
-  name: "force-ban",
-  code: `
-  $ban[$message[1];$guildID;1;$message[2]]
-  $author[1;$userTag[$authorID];$userAvatar[$authorID]]
-  $thumbnail[1;$userAvatar[$message[1]]]
-  $description[1;
-  <:emoji_70:917309183341236244> | \`$userTag[$message[1]]\` **İsimli Kullanıcı \`$message[2]\` Sebebinden Başarıyla Banlandı ^^**]
-  $footer[1;Kullanıcı ID'si : $message[1];$userAvatar[$message[1]]]
-  $onlyPerms[ban;{newEmbed:{description:<:emoji_71:917309220687314966> | \`$userTag[$authorID]\` Bunu Kullanmak İçin \`Üyeleri Banla İznin\` Olmalı}{color:RANDOM}}]
-   $suppressErrors[1;{newEmbed:{description:<:emoji_71:917309220687314966> | Bir Kullanıcı ID'si Girmelisin Dostum}{color:RANDOM}}]
-   $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz 
-   `,
-});
-
-bot.variables({
-  sliste: "1",
-});
-
-bot.command({
-  name: "reboot",
-  code: `
-$wait[6s]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$description[1;**$customEmoji[emoji_70]・Bot Yeniden Başlatıldı.**]
-$color[1;RANDOM]
-$onlyForIDs[$botOwnerID;728155399655784488;]
-`,
-});
-
-bot.command({
-  name: "reboot",
-  code: `
-$reboot[moonster.js]
-$onlyForIDs[$botOwnerID;728155399655784488;]
-`,
-});
 
 bot.variables({
   devpara: "Yok",
@@ -243,30 +171,6 @@ bot.variables({
   abonesayisi: "",
 });
 
-bot.command({
-  name: "para-sil",
-  code: `
-$suppressErrors[1;$customEmoji[emoji_71] | Sileceğim Kişiyi Etiketlemelisin ve Ne kadar miktar Sileceğimi yazmalısın]
-$description[1;
-$customEmoji[emoji_71] | \`$username[$authorID]\` İsimli Kullanıcı \`$username[$mentioned[1]]\` İsimli Kullanıcıdan \`$numberSeparator[$noMentionMessage;,]\` Miktarda Para Sildi]
-$setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage];$mentioned[1]]
-$onlyIf[$isNumber[$noMentionMessage]!=false;$customEmoji[emoji_71] | Sileceğim Miktar Para Değil! D-Dostum Naptın Sen :D]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz 
-$onlyForIDs[855747867074494544;]
-`,
-});
-
-bot.command({
-  name: "elmas-sil",
-  code: `
-$suppressErrors[1;$customEmoji[emoji_71] | Sileceğim Kişiyi Etiketlemelisin ve Ne kadar miktar Sileceğimi yazmalısın]
-$description[1;
-$customEmoji[emoji_71] | \`$username[$authorID]\` İsimli Kullanıcı \`$username[$mentioned[1]]\` İsimli Kullanıcıdan \`$numberSeparator[$noMentionMessage\` Miktarda Elmas Sildi]
-$setGlobalUserVar[elmas;$sub[$getGlobalUserVar[elmas;$mentioned[1]];$noMentionMessage];$mentioned[1]]
-$onlyIf[$isNumber[$noMentionMessage]!=false;$customEmoji[emoji_71] | Sileceğim Miktar Elmas Değil! D-Dostum Naptın Sen :D]
-$onlyForIDs[$botOwnerID;855747867074494544;728155399655784488;]
-`,
-});
 
 bot.command({
   name: "altın-sil",
