@@ -448,8 +448,7 @@ bot.guildJoinCommand({
   ]
   $thumbnail[1;$serverIcon[$guildID]]
   $color[1;5f6eff]
-  
-  $sendDM[{newEmbed:{author:Birisi Beni Sunucuna Ekledi}{description:Öncelikle Bu Metin Sadece Sana Gönderilmiştir, Sunucudaki Diğer Herhangibir Üyeye İletilmedi :)\n Destek Sunucumuz İçin-->  https://discord.gg/3327ykB4fM}{color:BLUE}{thumbnail:$userAvatar[$clientID]}{footer:$serverName - Giriş Yapıldı:$serverIcon[$guildID]}};$ownerID]
-  $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
+ 
+ $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
   `
   })
