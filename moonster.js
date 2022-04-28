@@ -172,19 +172,6 @@ bot.variables({
 });
 
 
-bot.command({
-  name: "altın-sil",
-  code: `
-$suppressErrors[1;$customEmoji[emoji_71] | Sileceğim Kişiyi Etiketlemelisin ve Ne kadar miktar Sileceğimi yazmalısın]
-$description[1;
-$customEmoji[emoji_71] | \`$username[$authorID]\` İsimli Kullanıcı \`$username[$mentioned[1]]\` İsimli Kullanıcıdan \`$numberSeparator[$noMentionMessage;,]\` Miktarda Altın Sildi]
-$setGlobalUserVar[altın;$sub[$getGlobalUserVar[altın;$mentioned[1]];$noMentionMessage];$mentioned[1]]
-$onlyIf[$isNumber[$noMentionMessage]!=false;$customEmoji[emoji_71] | Sileceğim Miktar Altın Değil! D-Dostum Naptın Sen :D]
-$onlyForIDs[$botOwnerID;855747867074494544;728155399655784488;]
-
-`,
-});
-
 bot.variables({
   premium: "Bulunmuyor",
 });
@@ -195,74 +182,11 @@ bot.variables({
   oy: "",
 });
 
-bot.command({
-  name: "rol-ver",
-  code: `
-$giveRole[$guildID;$mentioned[1];$mentionedRoles[1]]
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$thumbnail[1;$userAvatar[$mentioned[1]]]
-$description[1;
-**$customEmoji[emoji_70] | \`$userTag[$authorID]\` Başarıyla \`$userTag[$mentioned[1]]\` Kişisine <@&$mentionedRoles[1]> Rolünü Verdim**
-]
-$onlyPerms[manageroles;{newEmbed:{description:**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**}{color:RANDOM}}]
-$suppressErrors
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 
 
-`,
-});
-
-bot.command({
-  name: "rol-al",
-  code: `
-$takeRole[$guildID;mentioned[1];$mentionedRoles[1]]
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$thumbnail[1;$userAvatar[$mentioned[1]]]
-$description[1;
-**$customEmoji[emoji_70] | \`$userTag[$authorID]\` Başarıyla \`$userTag[$mentioned[1]]\` Kişisinden <@&$mentionedRoles[1]> Rolü Aldım**
-]
-$onlyPerms[manageroles;{newEmbed:{description:**$customEmoji[emoji_71] | Bu Komutu Kullanmak İçin \`Rolleri Yönet\` İznin Olmalı**}{color:RANDOM}}]
-$suppressErrors
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
 
 
-
-`,
-});
-
-bot.command({
-  name: "yatır-hepsi",
-  code: `
-$setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$authorID];$getGlobalUserVar[para;$authorID]];$authorID]
-$setGlobalUserVar[banka;$sum[$getGlobalUserVar[banka;$authorID];$getGlobalUserVar[para;$authorID]];$authorID]
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$description[1;
-**$customEmoji[emoji_70] | Başarıyla \`$numberSeparator[$getGlobalUserVar[para;$authorID];,]\` Miktarında Para Bankaya Yatırıldı**]
-$footer[1;$userTag[$authorID];$userAvatar[$authorID]]
-$suppressErrors
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
-
-`,
-});
-
-bot.command({
-  name: "çek-hepsi",
-  code: `
-$setGlobalUserVar[banka;$sub[$getGlobalUserVar[banka;$authorID];$getGlobalUserVar[banka;$authorID]];$authorID]
-$setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$authorID];$getGlobalUserVar[banka;$authorID]];$authorID]
-$color[1;RANDOM]
-$author[1;$userTag[$authorID];$userAvatar[$authorID]]
-$description[1;
-**$customEmoji[emoji_70] | Başarıyla \`$numberSeparator[$getGlobalUserVar[banka;$authorID];,]\` Miktarında Para Cüzdana Çekildi**]
-$footer[1;$userTag[$authorID];$userAvatar[$authorID]]
-$suppressErrors
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
-`,
-});
 
 
 
