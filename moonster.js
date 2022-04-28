@@ -13,18 +13,9 @@ bot.onInteractionCreate();
 bot.onJoin();
 bot.onLeave();
 bot.onMessage(); //enables bot to see messages (required for executing Commands)
-var reader = fs
-  .readdirSync("./komutlar")
-  .filter((file) => file.endsWith(".js"));
-for (const file of reader) {
-  const command = require(`./komutlar/${file}`);
-  bot.command({
-    name: command.name,
-    code: command.code,
-    aliases: command.aliases,
-    nonPrefixed: command.nonPrefixed,
-  });
-}
+
+const loader = new aoijs.LoadCommands(bot)
+loader.load(bot.cmd,"./komutlar/")
 
 bot.variables({
   bahis: "0",
