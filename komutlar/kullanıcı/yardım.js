@@ -9,7 +9,7 @@ $addField[1;**<a:tac:968591488982319144>・Bot Owner**;
 ]
 
 $addField[1;**<:tatlimisir:908393466847985726>・Eğlence**;
-\`$getServerVar[prefix]aşk-ölçer | $getServerVar[prefix]türk | $getServerVar[prefix]kaçcm | $getServerVar[prefix]öp | $getServerVar[prefix]seviyor-sevmiyor | $getServerVar[prefix]gay
+\`$getServerVar[prefix]aşk-ölçer | $getServerVar[prefix]türk-ölçer | $getServerVar[prefix]kaçcm | $getServerVar[prefix]öp | $getServerVar[prefix]seviyor-sevmiyor | $getServerVar[prefix]gay
 \`
 ]
 
