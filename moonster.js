@@ -129,56 +129,6 @@ bot.status({
   time: 12, //buraya ellemeyin
 });
 
-bot.command({
-  name: "oylama",
-  code: `
-$color[1;$random[0;99999]]
-$thumbnail[1;$authorAvatar]
-$title[1;Oylama Başladı]
-$description[1;
-$noMentionMessage]
-$addReactions[✅;❌]
-$footer[1;Yetkili - $username#$discriminator[$authorID]]
-
-$onlyPerms[manageroles;]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz 
-
-`,
-});
-
-bot.command({
-  name: "param",
-  aliases: [`param`, `cash`],
-  code: `
-$color[1;RANDOM]
-$author[1;$userTag[$mentioned[1;yes]];$userAvatar[$mentioned[1;yes]]]
-
-$addField[1;**・Rozetler**;
-> ・**Developer** : **$getGlobalUserVar[developer;$mentioned[1;yes]]**
-> ・**Moderatör** : **$getGlobalUserVar[staf;$mentioned[1;yes]]**
-> ・**Bug Hunter** : **$getGlobalUserVar[bughunter;$mentioned[1;yes]]**
-]
-
-$addField[1;**・Bakiye Bilgileri**;
-
-> ・**Üzerindeki Para Miktarı** : [$abbreviate[$getGlobalUserVar[para;$mentioned[1;yes]]]]($getBotInvite[admin]) 
-> ・**Bankadaki Para Miktarı** : [$abbreviate[$getGlobalUserVar[banka;$mentioned[1;yes]]]]($getBotInvite[admin]) 
-> ・**Üzerindeki Altın Miktarı** : [$abbreviate[$getGlobalUserVar[altın;$mentioned[1;yes]]]]($getBotInvite[admin])
-> ・**Üzerindeki Elmas Miktarı** : [$abbreviate[$getGlobalUserVar[elmas;$mentioned[1;yes]]]]($getBotInvite[admin])
-]
-$addField[1;・Hesap Bilgileri;
-
-> ・**Hesap İsmi** : \`$userTag[$mentioned[1;yes]]\`
-> ・**Hesabın Yaşı** : \`$creationDate[$mentioned[1;yes]]\`
-> ・**Hesabın ID'si** : \`$mentioned[1;yes]\`]
-$onlyIf[$getGlobalUserVar[kl;$mentioned[1;yes]]!=true;\`$getGlobalUserVar[ksebep;$mentioned[1;yes]]\` sebebinden karalistedesiniz  
-$footer[1;$username[$mentioned[1;yes]];$userAvatar[$mentioned[1]]]
-
-
-
-`,
-});
-
 bot.variables({
   developer: "Bulunmuyor",
   staf: "Bulunmuyor",
@@ -226,34 +176,9 @@ $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$author
 `,
 });
 
-bot.command({
-  name: "lisans",
-  code: `
-  Bu Komut \`$serverName\` Sunucusuna Aittir Çalınması Ve Paylaşılması Kesinlikle Yasaktır.
- $onlyForIDs[$botOwnerID;728155399655784488;]
- $deletecommand
- `,
-});
 
-bot.variables({
-  category: "", //Kategori ID
-  ticket: "", //Elleme
-  number: "0", //Elleme
-  staff: "", //Yetkili rolü ID
-  user: "", //Elleme
-});
 
-bot.variables({
-  spam: "kapalı",
-  spammessage: "",
-  spamsayı: "0",
-});
-bot.variables({
-  rklog: "",
-});
-bot.variables({
-  kengel: "kapalı",
-});
+
 
 bot.variables({
   küfür: "kapalı",
