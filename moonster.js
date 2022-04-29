@@ -197,6 +197,7 @@ bot.variables({
   logkanal: "",
   odulrolenabled: "kapalı",
   odulsayi: "",
+  bakımsistemi:"Kapalı",
   odulrol: "",
 });
 
