@@ -1,7 +1,7 @@
 module.exports = {
   name: "destek",
   code: `
-$dm[728155399655784488]
+$dm[855747867074494544]
 $color[1;RANDOM]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;**$userTag[$authorID] İsimli Kullanıcı \`$message[1]\` Sebebinden Destek İstedi.**]
