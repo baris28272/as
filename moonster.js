@@ -151,6 +151,7 @@ $description[1;
 $deleteIn[10s]
 $footer[1;$serverName[$guildID];$serverIcon]
 $onlyIf[$checkContains[$message;<@$clientID>]==true;]
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 
 `,
   nonPrefixed: true,
@@ -211,7 +212,7 @@ $description[1;
 $timeOutMember[$guildID;$mentioned[1];$noMentionMessage]
 $onlyPerms[ban;**$customEmoji[emoji_71] | Bunun \`İçin Üyeleri Banla\` İznin Olmalı**]
 $suppressErrors
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 
 `,
 });
@@ -263,7 +264,10 @@ bot.command({
   name:"sa",
   code:`
   $onlyIf[$message!=sa;**$customEmoji[tatlimisir] <@$authorID> Aleyküm Selam Hoşgeldin**]
-  $onlyIf[$getServerVar[saas]==açık;]`,
+  $onlyIf[$getServerVar[saas]==açık;]
+  $onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
+
+  `,
   nonPrefixed: true
 }) 
 
@@ -272,7 +276,10 @@ bot.command({
   name:"selam",
   code:`
   $onlyIf[$message!=selam;**$customEmoji[tatlimisir] <@$authorID> Aleyküm Selam Hoşgeldin**]
-  $onlyIf[$getServerVar[saas]==açık;]`,
+  $onlyIf[$getServerVar[saas]==açık;]
+  $onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
+
+  `,
   nonPrefixed: true
 }) 
 
@@ -280,7 +287,10 @@ bot.command({
   name:"selamun aleyküm",
   code:`
   $onlyIf[$message!=selamun aleyküm;**$customEmoji[tatlimisir] <@$authorID> Aleyküm Selam Hoşgeldin**]
-  $onlyIf[$getServerVar[saas]==açık;]`,
+  $onlyIf[$getServerVar[saas]==açık;]
+  $onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
+
+  `,
   nonPrefixed: true
 }) 
 

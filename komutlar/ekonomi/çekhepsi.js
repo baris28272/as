@@ -9,6 +9,6 @@ $description[1;
 **$customEmoji[emoji_70] | Başarıyla \`$numberSeparator[$getGlobalUserVar[banka;$authorID];,]\` Miktarında Para Cüzdana Çekildi**]
 $footer[1;$userTag[$authorID];$userAvatar[$authorID]]
 $suppressErrors
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 `,
 }
