@@ -21,7 +21,7 @@ $addField[1;**Genel Bilgi**;
 > **・ Sunucu Sahibi : <@$ownerID> | $userTag[$ownerID]**
 > **・ Sunucu Oluşturma Tarihi : $creationDate[$guildID]**
 ]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 
 `,
 };

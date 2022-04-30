@@ -8,7 +8,7 @@ module.exports = {
   <:emoji_70:917309183341236244> | \`$userTag[$message[1]]\` **İsimli Kullanıcı \`$message[2]\` Sebebinden Başarıyla Banlandı ^^**]
   $footer[1;Kullanıcı ID'si : $message[1];$userAvatar[$message[1]]]
   $onlyPerms[ban;{newEmbed:{description:<:emoji_71:917309220687314966> | \`$userTag[$authorID]\` Bunu Kullanmak İçin \`Üyeleri Banla İznin\` Olmalı}{color:RANDOM}}]
-   $suppressErrors[1;{newEmbed:{description:<:emoji_71:917309220687314966> | Bir Kullanıcı ID'si Girmelisin Dostum}{color:RANDOM}}]
-   $onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz 
+   $suppressErrors[1;{newEmbed:{author:$userTag:$authorAvatar}{description:<:emoji_71:917309220687314966> | Bir Kullanıcı ID'si Girmelisin Dostum}{color:RANDOM}}]
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
    `,
 }
