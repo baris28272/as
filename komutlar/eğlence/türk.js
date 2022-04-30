@@ -6,6 +6,6 @@ $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;🇹🇷・<@$authorID>  **__%$random[0;100]__** Türk]
 $footer[1;$username Tarafından Kullanıldı;$userAvatar[$authorID]]
 $addReactions[🇹🇷]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;**_\`$getGlobalUserVar[ksebep;$authorID]\`_ sebebinden karalistedesiniz.**] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 `,
 };

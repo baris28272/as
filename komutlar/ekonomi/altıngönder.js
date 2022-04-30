@@ -14,9 +14,8 @@ $description[1;
 $onlyIf[$mentioned[1]!=$botOwnerID;728155399655784488;$customEmoji[emoji_71] | **Bot Geliştiricisine** Para Atamazsın] 
 $color[1;RANDOM] 
 $onlyIf[$noMentionMessage<=$getGlobalUserVar[altın;$authorID];Bu Kadar Altın Yok Üstünde]
-$onlyIf[$getGlobalUserVar[devpara;$authorID]!=Var;$customEmoji[emoji_71] | Developerların Altın Göndermesi Yasak] 
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
-$onlyIf[$getServerVar[guildban]!=1;] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
+
 
 `,
 };

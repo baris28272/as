@@ -11,7 +11,7 @@ $color[1;RANDOM]
 $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;**<:emoji_70:917309183341236244> | \`$userTag[$authorID]\` Başarıyla Bankanıza $message 💵 Para Yatırdınız**]
 $onlyIf[$noMentionMessage>=0;**<:emoji_71:917309220687314966> | $username Sayıyı düzgün yaz.**]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;**_\`$getGlobalUserVar[ksebep;$authorID]\`_ sebebinden karalistedesiniz.**] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 $cooldown[5s;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`5 Saniye\` Beklemelisin.**] 
 `
 

@@ -6,6 +6,6 @@ $author[1;$userTag[$authorID];$userAvatar[$authorID]]
 $description[1;
 **<@$authorID>,<@$mentioned[1]> Kişisi Seni $randomText[Seviyor ❤;Sevmiyor 💔]**]
 $suppressErrors[1;{author:$userTag[$authorID]:$userAvatar[$authorID]}{description:**$customEmoji[emoji_71] | Dostum Birisini Etiketlemelisin**}{color:RANDOM}]
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 `,
 }

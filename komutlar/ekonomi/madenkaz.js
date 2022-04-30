@@ -8,7 +8,7 @@ $description[1;
 $setGlobalUserVar[elmas;$sum[$getGlobalUserVar[elmas;$authorID];$random[20;50]];$authorID]
 $setGlobalUserVar[altın;$sum[$getGlobalUserVar[altın;$authorID];$random[15;45]];$authorID]
 $cooldown[40s;**$customEmoji[emoji_71] Bu Komutu Kullanmak İçin \`40 Saniye\` Beklemelisin.**] 
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 
 
 `,

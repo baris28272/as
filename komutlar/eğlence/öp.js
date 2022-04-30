@@ -8,7 +8,7 @@ $image[1;$randomText[https://cdn.discordapp.com/attachments/775719943978352700/8
 $onlyIf[$isBot[$mentioned[1]]!=true; Botu Öpemezsin.]
 $onlyIf[$mentioned[1]!=$authorID; Kendini Öpemezsin]
 $onlyIf[$mentioned[1]!=;Birini Etiketle Knk] 
-$onlyIf[$getGlobalUserVar[kl;$authorID]!=true;\`$getGlobalUserVar[ksebep;$authorID]\` sebebinden karalistedesiniz.] 
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 `
 
 } 
