@@ -339,16 +339,8 @@ bot.guildJoinCommand({
   ]
   $thumbnail[1;$serverIcon[$guildID]]
   $color[1;5f6eff]
- 
+
  $log[$serverName[$guildID] - Sunucusuna Giriş Yaptım.]
   `
   })
 
-
-bot.command({
-name:"moonster",
-code:`
-$jsonRequest[https://app.cortexduo.com/v2/ai?key=demo&soru=$message]
-`,
-  nonPrefixed:true
-  })

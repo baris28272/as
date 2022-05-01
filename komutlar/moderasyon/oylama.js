@@ -1,9 +1,8 @@
 module.exports = {
   name: "oylama",
   code: `
-$color[1;$random[0;99999]]
-$thumbnail[1;$authorAvatar]
-$title[1;Oylama Başladı]
+$author[1;$userTag;$authorAvatar]
+$color[1;RANDOM]
 $description[1;
 $noMentionMessage]
 $addReactions[✅;❌]
