@@ -18,12 +18,12 @@ $addField[1;**<a:parack:968590882188181524>・Ekonomi**;
 \`
 ] 
 
-$addField[1;**<a:muzik:970419086804783165>・Müzik**;
+$addField[1;**<a:muzik:970419086804783165>・Müzik Sistemi**;
 \`$getServerVar[prefix]join | $getServerVar[prefix]çal | $getServerVar[prefix]durdur | $getServerVar[prefix]devam-et | $getServerVar[prefix]geç | $getServerVar[prefix]ses | $getServerVar[prefix]leave
 \`
 ]
 
-$addField[1;**<:heavankayit:970325059140976680>・Kayıt**;
+$addField[1;**<:heavankayit:970325059140976680>・Kayıt Sistemi**;
 \`$getServerVar[prefix]kayıt-kanal | $getServerVar[prefix]kayıtsız-rol | $getServerVar[prefix]kayıt-yetkili | $getServerVar[prefix]erkek-rol | $getServerVar[prefix]kız-rol | $getServerVar[prefix]kayıt-sistemi sıfırla | ?erkek | ?kadın
 \`
 
