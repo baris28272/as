@@ -85,7 +85,8 @@ bot.variables({
   kayıtyetkilisi:"0",
   kadınrol:"0",
   erkekrol:"0",
-  kayıtsızrol:"0"
+  kayıtsızrol:"0",
+  kayıtkanal:"0",
   
 });
 
