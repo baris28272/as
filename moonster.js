@@ -81,7 +81,12 @@ bot.variables({
   ticketcategory: "",
   ticketsorumlusu: "",
   ticket: "kapalı",
-  küfürengell:"Kapalı"
+  küfürengell:"Kapalı",
+  kayıtyetkilisi:"0",
+  kadınrol:"0",
+  erkekrol:"0",
+  kayıtsızrol:"0"
+  
 });
 
 bot.joinCommand({
