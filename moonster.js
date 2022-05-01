@@ -350,3 +350,27 @@ bot.guildJoinCommand({
   `
   })
 
+
+bot.joinCommand({
+channel: "$getServerVar[kayıtkanal;$guildID]", 
+code: `
+<@&$getServerVar[kayıtyetkili;$guildID]>
+$color[1;RANDOM]
+$title[1;Yeni birisi katıldı;$getBotInvite]
+$thumbnail[1;$authorAvatar]
+$description[1;**<@$authorID> kişisi sunucuya kaydıraktan kayarak geldi
+Merhaba \`$userTag\` biraz bekle, \`$roleName[$getServerVar[kayıtyetkili;$guildID]]\` rolündeki kişiler
+sizinle en yakın zamanda ilgilenecektir.
+Bu zaman içerisinde müzik dinleyin 🎶**]
+Discord'a kayıt tarihin: \`$creationDate[$authorID]\`
+$giveRoles[$guildID;$authorID;$getServerVar[kayıtsızrol;$guildID]]
+$onlyIf[$getServerVar[erkekrol;$guildID]!=0;]
+$onlyIf[$getServerVar[kadınrol;$guildID]!=0;]
+$onlyIf[$getServerVar[kayıtyetkili;$guildID]!=0;]
+
+` 
+
+})
+
+bot.onJoin()  
+
