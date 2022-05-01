@@ -1,7 +1,7 @@
 module.exports = {
   name: "hgbb-ayarla",
   code: `
-$author[1:$userTag;$userAvatar[$authorID]]]
+$author[1;$userTag;$userAvatar[$authorID]]]
 $color[1;RANDOM]
 $description[1;**
 $customEmoji[emoji99] <$authorID> Gelen Giden kanalı <#$mentionedChannels[1]> Olarak Başarıyla Ayarlandı.**]

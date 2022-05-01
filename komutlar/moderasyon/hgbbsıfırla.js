@@ -2,6 +2,7 @@ module.exports = {
   name: "hgbb-sıfırla",
   aliases: "hgbb-sıfırla",
   code: `
+$autj
 $color[1;RANDOM]
 $description[1;**
 $customEmoji[emoji99] <@$authorID> Gelen Giden Sistemi Başarıyla Sıfırlandı.**]
