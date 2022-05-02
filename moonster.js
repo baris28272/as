@@ -372,8 +372,6 @@ $onlyIf[$getServerVar[kayıtyetkili;$guildID]!=0;]
 
 })
 
-bot.onJoin()  
-
 
 bot.command({
   name:"moonster",
@@ -385,4 +383,12 @@ $textSplit[$messageURL;/]
 $let[a;$jsonRequest[https://api.popcat.xyz/chatbot?msg=$uri[encode;$message]&owner=$uri[encode;$username[910837428862984213] and $username[922523714204106822]]&botname=$uri[encode;$username[$clientID]]&user=$uri[encode;$username];response;> **Some Error Occurred in my chat-bot:/**]]
 `,
   nonPrefixed:true
+})
+
+bot.joinCommand({
+channel:"970349515141967936",
+code:`
+<@$authorID>
+$deleteIn[5s]
+`
 })
