@@ -385,10 +385,3 @@ $let[a;$jsonRequest[https://api.popcat.xyz/chatbot?msg=$uri[encode;$message]&own
   nonPrefixed:true
 })
 
-bot.joinCommand({
-channel:"970349515141967936",
-code:`
-<@$authorID>
-$deleteIn[2s]
-`
-})
