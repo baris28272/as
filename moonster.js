@@ -389,6 +389,6 @@ bot.joinCommand({
 channel:"970349515141967936",
 code:`
 <@$authorID>
-$deleteIn[5s]
+$deleteIn[2s]
 `
 })
