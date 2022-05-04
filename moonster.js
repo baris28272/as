@@ -83,6 +83,7 @@ bot.variables({
   ticket: "kapalı",
   küfürengell:"Kapalı",
   kayıtyetkilisi:"0",
+  kayıtyetkili:"0",
   kadınrol:"0",
   erkekrol:"0",
   kayıtsızrol:"0",
