@@ -225,7 +225,7 @@ $onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$use
 });
 
 bot.readyCommand({
-  channel: "965170082391146556",
+  channel: "971441897098838070",
   code: `
   $log[-------------Bot Açık---------]
   $wait[5s]
@@ -317,7 +317,7 @@ const voice = new aoijs.Voice(bot, {
 //----------------  EKLENDİM - ATILDM LOG ----------------//
 
 bot.guildLeaveCommand({
-channel: "965170082391146556",
+channel: "971441897098838070",
 code: `
 $title[1;:outbox_tray: **$serverName - Çıkış Yaptım** :outbox_tray:]
 $description[1;
@@ -333,7 +333,7 @@ $log[$serverName - Sunucusundan Çıkış Yaptım.]
 })
 
 bot.guildJoinCommand({
-  channel: "965170082391146556",
+  channel: "971441897098838070",
   code: `
   $title[1;:inbox_tray: **$serverName[$guildID] - Giriş Yaptım** :inbox_tray:]
   $description[1;
