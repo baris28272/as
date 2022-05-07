@@ -1,9 +1,7 @@
-
 const aoijs = require("aoi.js");
 const bot = new aoijs.Bot({
   token: process.env.token,
   prefix: process.env.prefix,
-  botowner: process.env.botowner,
   intents: "all",
   fetchInvites: true,
 });
