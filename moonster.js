@@ -5,8 +5,6 @@ const bot = new aoijs.Bot({
   intents: "all",
   fetchInvites: true,
 });
-bot.onGuildJoin()
-bot.onGuildLeave()
 bot.onInteractionCreate();
 bot.onJoin();
 bot.onLeave();
