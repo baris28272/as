@@ -150,7 +150,7 @@ $description[1;
 ・ **Sunucu Sayım** : **$serverCount**
 ・ **Kullanıcı Sayım** : **$allMembersCount**
 ・ **Prefix'im** : **$getServerVar[prefix]**
-・ **Destek Sunucum** : [Tıkla](https://discord.gg/gzDnMcG4ym)
+・ **Destek Sunucum** : [Tıkla](https://discord.gg/Bqyqj4Ezwe)
 ・ **Bot'u Davet Et** : [Tıkla]($getBotInvite[admin])
 ]
 $deleteIn[10s]
