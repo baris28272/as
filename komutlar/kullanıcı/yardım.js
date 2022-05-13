@@ -14,7 +14,7 @@ $addField[1;**<:tatlimisir:908393466847985726>・Eğlence**;
 ]
 
 $addField[1;**<a:parack:968590882188181524>・Ekonomi**;
-\`$getServerVar[prefix]param | $getServerVar[prefix]yatır | $getServerVar[prefix]çek | $getServerVar[prefix]para-gönder | $getServerVar[prefix]çalış | $getServerVar[prefix]dilen | $getServerVar[prefix]balık-tut | $getServerVar[prefix]odun-kes | $getServerVar[prefix]kazı-kazan | $getServerVar[prefix]günlük | $getServerVar[prefix]haftalık | $getServerVar[prefix]maden-kaz | $getServerVar[prefix]elmas-sat | $getServerVar[prefix]altın-sat | $getServerVar[prefix]elmas-gönder | $getServerVar[prefix]altın-gönder | $getServerVar[prefix]rozet-al | $getServerVar[prefix]çek-hepsi | $getServerVar[prefix]yatır-hepsi
+\`$getServerVar[prefix]param | $getServerVar[prefix]yatır | $getServerVar[prefix]çek | $getServerVar[prefix]para-gönder | $getServerVar[prefix]çalış | $getServerVar[prefix]dilen | $getServerVar[prefix]balık-tut | $getServerVar[prefix]odun-kes | $getServerVar[prefix]kazı-kazan | $getServerVar[prefix]günlük | $getServerVar[prefix]haftalık | $getServerVar[prefix]maden-kaz | $getServerVar[prefix]elmas-sat | $getServerVar[prefix]altın-sat | $getServerVar[prefix]elmas-gönder | $getServerVar[prefix]altın-gönder | $getServerVar[prefix]rozet-al | $getServerVar[prefix]coinflip | $getServerVar[prefix]çek-hepsi | $getServerVar[prefix]yatır-hepsi
 \`
 ] 
 
