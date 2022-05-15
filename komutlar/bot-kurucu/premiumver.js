@@ -9,5 +9,11 @@ $setGlobalUserVar[premium;Bulunuyor;$get[y]]
 $let[s;$messageSlice[1]]
 $let[k;$authorID]
 $let[y;$mentioned[1]]
+$onlyIf[$checkContains[$messageSlice[1];saniye;dakika;saat;gün]!=false;**$customEmoji[emoji_999] <@$authorID> Bir süre girin. \`1 Saniye | 1 Dakika | 1 Saat | 1 gün\`**]
+$suppressErrors[1;**$customEmoji[emoji_999] <@$authorID> Birini Etiketleyin ve bir Süre Belirt \`1 Saniye | 1 Dakika | 1 Saat | 1 gün\`**]
+$onlyIf[$messageSlice[1]!=;**$customEmoji[emoji_999] <@$authorID> Bir süre girin. \`1 Saniye | 1 Dakika | 1 Saat | 1 gün\`**]
+$onlyIf[$isBot[$mentioned[1]]!=true;**$customEmoji[emoji_999] <@$authorID> Bir bota premium veremezsin**]
+$onlyIf[$mentioned[1]!=;**$customEmoji[emoji_999] <@$authorID> Bir Kişiyi Etiketlemelisin**]
+$onlyForIDs[855747867074494544;**$customEmoji[emoji_999] <@$authorID> Bu Komutu Sadece \`$userTag[855747867074494544]\` İsimli Geliştiricim Kullanabilir**]
 `
   }
