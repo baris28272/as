@@ -19,7 +19,7 @@ $addField[1;・Hesap Bilgileri;
 > ・**Hesap İsmi** : \`$userTag[$mentioned[1;yes]]\`
 > ・**Hesabın Yaşı** : \`$creationDate[$mentioned[1;yes]]\`
 > ・**Hesabın ID'si** : \`$mentioned[1;yes]\`]
-$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 $footer[1;$username[$mentioned[1;yes]];$userAvatar[$mentioned[1]]]
-`,
+$onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
+`
 }
