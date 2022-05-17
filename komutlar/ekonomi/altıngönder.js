@@ -8,6 +8,7 @@ $onlyIf[$noMentionMessage>0;**$customEmoji[emoji_71] | $username 0'dan Düşük 
 $suppressErrors[1;**<:emoji_71:917309220687314966> | $username Doğru Kullanım ?altın-gönder @etiket Miktar**]
 $setGlobalUserVar[altın;$sub[$getGlobalUserVar[altın;$authorID];$noMentionMessage];$authorID]
 $setGlobalUserVar[altın;$sum[$getGlobalUserVar[altın;$mentioned[1]];$noMentionMessage];$mentioned[1]]
+$author[1;$userTag;$authorAvatar]
 $description[1;
 **$customEmoji[emoji_70] | \`$userTag[$authorID]\` İsimli Kullanıcı \`$userTag[$mentioned[1]]\` Kişisine \`$numberSeparator[$noMentionMessage;,]\` Miktarında Altın Gönderdi**
 ]

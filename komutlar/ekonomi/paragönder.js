@@ -2,10 +2,10 @@ module.exports = {
   name: "para-gönder",
   aliases: "para-gönder",
   code: `
-$onlyIf[$mentioned[1]!=$authorID;**<:emoji_71:917309220687314966> | $username Kendine Para Yollayazsın**]
+$onlyIf[$mentioned[1]!=$authorID;**$customEmoji[emoji_999] | $username Kendine Para Yollayazsın**]
 $onlyIf[$isNumber[$noMentionMessage]!=false;**$customEmoji[emoji_71] | Bir miktar belirt**]
-$onlyIf[$noMentionMessage>0;**$customEmoji[emoji_71] | $username 0'dan Düşük miktar belirtemezsi**]
-$suppressErrors[1;**<:emoji_71:917309220687314966> | $username Doğru Kullanım ?para-gönder @etiket Miktar**]
+$onlyIf[$noMentionMessage>0;**$customEmoji[emoji_999] | $username 0'dan Düşük miktar belirtemezsi**]
+$suppressErrors[1;**$customEmoji[emoji_999| $username Doğru Kullanım ?para-gönder @etiket Miktar**]
 $setGlobalUserVar[para;$sub[$getGlobalUserVar[para;$authorID];$noMentionMessage];$authorID]
 $setGlobalUserVar[para;$sum[$getGlobalUserVar[para;$mentioned[1]];$noMentionMessage];$mentioned[1]]
 $description[1;

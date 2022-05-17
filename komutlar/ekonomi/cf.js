@@ -5,7 +5,8 @@ module.exports = [{
   $onlyIf[$message[1]<=150000;**$customEmoji[emoji_999] <@$authorID>, 150.000'den fazla giremezsin.**]
   $onlyIf[$getGlobalUserVar[para]>=$message[1];**$customEmoji[emoji_999] <@$authorID>, Cüzdanında bu kadar para yok.**] 
   $onlyIf[$isNumber[$message[1]]==true;**$customEmoji[emoji_999] <@$authorID>, Miktar gir.**] 
-  ` },
+ $onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}]
+ ` },
       { name:"win",
        type:"awaited",
        code:` $editIn[3s;**<a:paraa:974703809995628636> <@$authorID>, \`$math[$message[1]*2]₺\` Kazandın.**] 
