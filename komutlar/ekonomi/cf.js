@@ -2,7 +2,7 @@ module.exports = [{
   name:"coinflip", 
   aliases:["coin-flip","cf"],
   code:` $if[$randomText[lose;win;lose]==win;{execute:win};{execute:lose}]
-  $onlyIf[$message[1]<=150000;**$customEmoji[emoji_999] <@$authorID>, 150.000'den fazla giremezsin.*(]
+  $onlyIf[$message[1]<=150000;**$customEmoji[emoji_999] <@$authorID>, 150.000'den fazla giremezsin.**]
   $onlyIf[$getGlobalUserVar[para]>=$message[1];**$customEmoji[emoji_999] <@$authorID>, Cüzdanında bu kadar para yok.**] 
   $onlyIf[$isNumber[$message[1]]==true;**$customEmoji[emoji_999] <@$authorID>, Miktar gir.**] 
   ` },
