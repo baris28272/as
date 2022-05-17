@@ -3,7 +3,7 @@ name:"premium-ver",
 code:`
 $channelSendMessage[975444593581649981;**$customEmoji[emoji99] \`$userTag[$get[y]]\` Kişisinin \`$get[s]\` Süreli Premiumun Süresi Bittiği İçin Premium'u Aldım**;no]
 $setGlobalUserVar[premium;Bulunmuyor;$get[y]]
-$wait[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$get[s]; ;];saniye;s];dakika;m];saat;h];gün;d]]
+$wait[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$get[s]; ;];Saniye;s];Dakika;m];Saat;h];Gün;d]]
 $sendMessage[**$customEmoji[emoji99] \`$userTag[$get[y]]\` Kişisine Başarıyla \`$get[s]\` Süresine Kadar Premium Verildi**;no]
 $setGlobalUserVar[premium;Bulunuyor;$get[y]]
 $let[s;$messageSlice[1]]
