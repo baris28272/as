@@ -2,7 +2,7 @@ const aoijs = require("aoi.js");
 const Discord = require("discord.js");
 const bot = new aoijs.Bot({
   token: process.env.token,
-  prefix: process.env.prefix,
+  prefix:"+",
   intents: "all",
   fetchInvites: true,
 });
@@ -129,7 +129,7 @@ bot.variables({
 });
 
 bot.status({
-  text: "?yardım | ?destek | 7/24 Aktif", //buraya durum yazısı
+  text: "+yardım | +destek | 7/24 Aktif", //buraya durum yazısı
   type: "STREAMING", //buraya oynuyor bölümü PLAYING LISTENING WATCHING STREAMING şeklindede yapabilirsiniz
   status: "online", //buraya status kısmı dnd idle online şeklinde yapabilirsiniz
   time: 12, //buraya ellemeyin
