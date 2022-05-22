@@ -27,7 +27,6 @@ $addField[1;**<:boteglence:968593132453261322>・Genel**;
 \`$getServerVar[prefix]avatar | $getServerVar[prefix]kurucu | $getServerVar[prefix]sunucu-bilgi | $getServerVar[prefix]hatırlatıcı-oluştur | ?destek | $getServerVar[prefix]sunucu-avatar | $getServerVar[prefix]oy-ver
 \`
   ]
-$image[1;https://media.discordapp.net/attachments/967516336806842418/969138821398687744/standard-1.gif]
 $footer[1;Bu Komut $userTag[$authorID] Tarafından Kullanıldı;$userAvatar[$authorID]]
 $onlyIf[$getGlobalUserVar[bakımsistemi]!=Açık;{newEmbed:{author:$userTag:$userAvatar[$authorID]}{description:**$customEmoji[emoji_999] <@$authorID> Bot Şuan Bakımdadır Lütfen Geliştiricim Bakımdan Çıkarana kadar Bekleyiniz.**}{color:RANDOM}}] 
 
