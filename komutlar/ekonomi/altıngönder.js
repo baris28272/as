@@ -10,7 +10,7 @@ $setGlobalUserVar[altın;$sub[$getGlobalUserVar[altın;$authorID];$noMentionMess
 $setGlobalUserVar[altın;$sum[$getGlobalUserVar[altın;$mentioned[1]];$noMentionMessage];$mentioned[1]]
 $author[1;$userTag;$authorAvatar]
 $description[1;
-**$customEmoji[emoji_70] | \`$userTag[$authorID]\` İsimli Kullanıcı \`$userTag[$mentioned[1]]\` Kişisine \`$numberSeparator[$noMentionMessage;,]\` Miktarında Altın Gönderdi**
+**$customEmoji[emoji99] | \`$userTag[$authorID]\` İsimli Kullanıcı \`$userTag[$mentioned[1]]\` Kişisine \`$numberSeparator[$noMentionMessage;,]\` Miktarında Altın Gönderdi**
 ]
 $onlyIf[$mentioned[1]!=$botOwnerID;728155399655784488;$customEmoji[emoji_71] | **Bot Geliştiricisine** Para Atamazsın] 
 $color[1;RANDOM] 
