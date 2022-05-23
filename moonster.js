@@ -18,6 +18,7 @@ loader.load(bot.cmd,"./komutlar/")
 
 bot.variables({
   bahis: "0",
+  prefix:"+",
   maaş: "0",
   meslekp: "Bulunmuyor",
   bughunter: "Bulunmuyor",
