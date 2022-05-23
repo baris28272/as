@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node moonster.js"
+    "start": "wésta.js"
   },
   "dependencies": {
     "aoi.js": "^5.1.2",
