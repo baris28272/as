@@ -1,8 +1,8 @@
 module.exports = {
 name:"ekonomi",
 code:`
-$author[1;$userTag;$authorAvatar]
 $color[1;RANDOM]
+$author[1;$userTag;$authorAvatar]
 $description[1;**
 <:gift:968571121458872370> | \`$getServerVar[prefix]param\` - Etiketlediğiniz kişinin veya kendinizin parasına bakarsınız.
 <:gift:968571121458872370> | \`$getServerVar[prefix]günlük\` - Günlük paranızı alırsınız.
@@ -16,5 +16,6 @@ $description[1;**
 <:gift:968571121458872370> | \`$getServerVar[prefix]para-çal\` - Etiketlediğiniz kişiyi soyarsınız.
 <:gift:968571121458872370> | \`$getServerVar[prefix]pasif-aç\` - Pasif modu açarsınız.
 <:gift:968571121458872370> | \`$getServerVar[prefix]şanslı-sayım\` - Şanslı sayım ile para kazanırsınız.**
+
 `
   }
