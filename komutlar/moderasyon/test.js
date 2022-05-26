@@ -1,5 +1,5 @@
 module.exports = [{
-  name: "test",
+  name: "yardım",
   aliases: "yardim",
   description: "Yardım Menüsünü Görüntüleyin",
   code: `
