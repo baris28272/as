@@ -1,11 +1,11 @@
 module.exports = {
   name: "elmas-sat",
   code: `
-  $setGlobalUserVar[para;$sum[$getGlobalUserVar[para];$multi[$message;2000]];$authorID]
+  $setGlobalUserVar[para;$sum[$getGlobalUserVar[para];$multi[$message;300]];$authorID]
   $setGlobalUserVar[elmas;$sub[$getGlobalUserVar[elmas];$message];$authorID]
   $author[1;$userTag;$authorAvatar]
   $description[1;
-**$customEmoji[emoji_70] | $message adet elmas satıldı. Parana $numberSeparator[$multi[$message;2000];,] tl eklendi.**]
+**$customEmoji[emoji_70] | $message adet elmas satıldı. Parana $numberSeparator[$multi[$message;300];,] tl eklendi.**]
   $footer[1;Komutu kullanan: $username[$authorID]]
   $onlyIf[$getGlobalUserVar[elmas]>=$message;**$customEmoji[emoji_70] | $username Yeterli miktarda altınınız yok $message adet elmas sahip olmalısınız.**]
   $suppressErrors[1;**$customEmoji[emoji_71] | $username Lütfen bir sayı giriniz.**]

@@ -1,11 +1,11 @@
 module.exports = {
   name: "altın-sat",
   code: `
-  $setGlobalUserVar[para;$sum[$getGlobalUserVar[para];$multi[$message;2000]];$authorID]
+  $setGlobalUserVar[para;$sum[$getGlobalUserVar[para];$multi[$message;200]];$authorID]
   $setGlobalUserVar[altın;$sub[$getGlobalUserVar[altın];$message];$authorID]
  $author[1;$userTag;$authorAvatar]
  $description[1;
-**<:emoji_70:917309183341236244> | $message adet altın satıldı. Parana $numberSeparator[$multi[$message;2000];,] tl eklendi.**]
+**<:emoji_70:917309183341236244> | $message adet altın satıldı. Parana $numberSeparator[$multi[$message;200];,] tl eklendi.**]
   $footer[1;Komutu kullanan: $username[$authorID]]
   $onlyIf[$getGlobalUserVar[altın]>=$message;**<:emoji_71:917309220687314966> | $username Yeterli miktarda altınınız yok! $message adet altına sahip olmalısınız.**]
   $suppressErrors[1;**<:emoji_71:917309220687314966> | $username Lütfen bir sayı giriniz.**]
