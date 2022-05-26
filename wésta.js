@@ -20,4 +20,5 @@ bot.variables({
 para:"0",
 banka:"0",
 prefix:"?",
+kasa:"0",
 })    
