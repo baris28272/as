@@ -22,4 +22,23 @@ banka:"0",
 prefix:"?",
 kasa:"0",
 pasif:"kapalı",
+gç:"",
 })    
+
+bot.joinCommand({
+channel: "$getServerVar[gç]",
+code: `
+$thumbnail[1;$authorAvatar]
+$color[1;RANDOM]
+$author[1;Hoş geldin;$authorAvatar]
+$description[1;**$customEmoji[tatlimisir] \`$username#$discriminator[$authorID]\` adlı kullanıcı sunucuya katıldı.**]  `
+} )   
+
+bot.leaveCommand({
+channel: "$getServerVar[gç]",
+code: `
+$thumbnail[1;$authorAvatar]
+$color[1;RANDOM]
+$author[1;Görüşürüz;$authorAvatar]
+$description[1;**$customEmoji[tatlimisir] \`$username#$discriminator[$authorID]\` adlı kullanıcı sunucudan ayrıldı.**]`
+} )   
