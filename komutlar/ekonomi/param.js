@@ -4,11 +4,6 @@ module.exports = {
   code: `
 $color[1;RANDOM]
 $author[1;$userTag[$mentioned[1;yes]];$userAvatar[$mentioned[1;yes]]]
-$addField[1;**・Rozetler**;
-> ・**Developer** : **$getGlobalUserVar[developer;$mentioned[1;yes]]**
-> ・**Moderatör** : **$getGlobalUserVar[staf;$mentioned[1;yes]]**
-> ・**Bug Hunter** : **$getGlobalUserVar[bughunter;$mentioned[1;yes]]**
-]
 $addField[1;**・Bakiye Bilgileri**;
 > ・**Üzerindeki Para Miktarı** : [$abbreviate[$getGlobalUserVar[para;$mentioned[1;yes]]]]($getBotInvite[admin]) 
 > ・**Bankadaki Para Miktarı** : [$abbreviate[$getGlobalUserVar[banka;$mentioned[1;yes]]]]($getBotInvite[admin]) 
