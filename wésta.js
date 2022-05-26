@@ -23,6 +23,8 @@ prefix:"?",
 kasa:"0",
 pasif:"kapalı",
 gç:"",
+afk:"",
+afks:"",
 })    
 
 bot.joinCommand({
