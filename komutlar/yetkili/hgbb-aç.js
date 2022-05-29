@@ -15,7 +15,7 @@ $if[$message[1]==kapat]
 $color[1;RANDOM]
 $thumbnail[1;$serverIcon]
 $author[1;$userTag;$authorAvatar]
-$description[1;**$customEmoji[emoji_999] <@$authorID> Gelen giden sistemi başarıyla kapatıldı.**]
+$description[1;**$customEmoji[emoji99] <@$authorID> Gelen giden sistemi başarıyla kapatıldı.**]
 $resetServerVar[gç]
 $onlyPerms[admin;**$customEmoji[emoji_999] <@$authorID>, bu komutu sadece \`Yönetici\` iznine sahip olan kullanıcılar kullanabilir.**]
 $endif
