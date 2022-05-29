@@ -10,7 +10,7 @@ $addField[1;**<:Blue_Gift:970360659248295966>・Ekonomi**;
 \` ?param / ?günlük / ?çalış / ?kazı-kazan / ?balık-tut / ?kasa-al / ?kasa-aç / ?para-yatır / ?para-çek / ?para-çal / ?pasif-aç / ?pasif-kapat / ?şanslı sayım
 \`
 $addField[1;**<:admin:977852980990726154>・Yetkili**;
-\` ?ban / ?ban-say / ?kick / ?nuke / ?sil / ?hgbb aç / ?hgbb kapat
+\` ?ban / ?ban-say / ?kick / ?nuke / ?sil / ?hgbb aç / ?hgbb kapat / ?otorol aç / ?otorol kapat
 \`
 ]
 
