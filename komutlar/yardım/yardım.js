@@ -1,5 +1,6 @@
 module.exports = {
 name:"yardım",
+aliases:["help","yardim",],
 code:`
 $author[1;$userTag;$authorAvatar]
 $color[1;RANDOM]
