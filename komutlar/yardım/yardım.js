@@ -8,14 +8,14 @@ $addField[1;**<:boteglence:968593132453261322>・Not**;**Not : Öneri veya Deste
 $description[1;**$customEmoji[tatlimisir] Merhaba ben \`$username[$clientID]\` komutlarımı görmek için menülere bakarak komutlarıma ulaşabilirsin.**]
 
 $addField[1;**<:Blue_Gift:970360659248295966>・Ekonomi**;
-\`?param / ?günlük / ?çalış / ?kazı-kazan / ?balık-tut / ?kasa-al / ?kasa-aç / ?para-yatır / ?para-çek / ?şanslı-sayı oyunu / ?para-sıralaması / ?para-gönder
+\`?param / ?günlük / ?çalış / ?kazı-kazan / ?balık-tut / ?kasa-al / ?kasa-aç / ?cf / ?para-yatır / ?para-çek / ?şanslı-sayı oyunu / ?para-sıralaması / ?para-gönder
 \`
 $addField[1;**<:admin:977852980990726154>・Yetkili**;
 \`?ban / ?ban-say / ?kick / ?nuke / ?sil / ?hgbb aç / ?hgbb kapat / ?otorol aç / ?otorol kapat
 \`
 ]
 $addField[1;**<:uye:977856238056534047>・Kullanıcı**;
-\`?avatar / ?sunucu-avatar / ?öneri / ?destek / ?banner
+\`?avatar / ?sunucu-avatar / ?öneri / ?destek / ?banner / ?kurucu
 \`
 ]
 
