@@ -1,8 +1,8 @@
 module.exports = {
-name: "avatar",
+name: "banner",
 code: `
 $color[1;RANDOM]
 $author[1;$username#$discriminator[$mentioned[1;yes]];$authorAvatar]
-$image[1;$userAvatar[$mentioned[1;yes]]]
+$image[1;$getUserBanner[$mentioned[1;yes]]]
 `
 }      
