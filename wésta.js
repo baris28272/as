@@ -1,8 +1,10 @@
-const aoijs = require('aoi.js')
-const bot = new aoi.Bot({
-   token: process.env.token, ////token enve
-   prefix:"?",
-   intents: 'all',
+const aoijs = require("aoi.js");
+const Discord = require("discord.js");
+const bot = new aoijs.Bot({
+  token: process.env.token,
+  prefix:"+",
+  intents: "all",
+  fetchInvites: true,
 database: {
          type:'default',
         db:require('quick.db'),//herhangi bir data base modülüde olur
@@ -15,8 +17,8 @@ bot.onInteractionCreate()
 bot.onLeave()
 bot.onMessage()
 bot.onMessageDelete()
-const loader = new aoi.LoadCommands(bot);
-loader.load(bot.cmd,'./komutlar/') 
+const loader = new aoijs.LoadCommands(bot)
+loader.load(bot.cmd,"./komutlar/")
 
 bot.variables({
   para: "0",
