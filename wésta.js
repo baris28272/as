@@ -2,23 +2,18 @@ const aoijs = require("aoi.js");
 const Discord = require("discord.js");
 const bot = new aoijs.Bot({
   token: process.env.token,
-  prefix:"+",
+  prefix: "$getServerVar[prefix]",
   intents: "all",
   fetchInvites: true,
-database: {
-         type:'default',
-        db:require('quick.db'),//herhangi bir data base modülüde olur
-        path:"./database/",//dosya adı
-        tables:["irrena"],
-        promisify:true
-    } 
-})
-bot.onInteractionCreate()
-bot.onLeave()
-bot.onMessage()
-bot.onMessageDelete()
-const loader = new aoijs.LoadCommands(bot)
-loader.load(bot.cmd,"./komutlar/")
+});
+bot.onGuildJoin();
+bot.onGuildLeave();
+bot.onInteractionCreate();
+bot.onJoin();
+bot.onLeave();
+bot.onMessage(); //enables bot to see messages (required for executing Commands)
+const loader = new aoijs.LoadCommands(bot);
+loader.load(bot.cmd, "./komutlar/");
 
 bot.variables({
   para: "0",
@@ -57,13 +52,3 @@ $color[1;RANDOM]
 $author[1;Hoş geldin;$authorAvatar]
 $description[1;**$customEmoji[tatlimisir] \`$username#$discriminator[$authorID]\` adlı kullanıcı sunucuya katıldı ve <@&$getServerVar[otorol]> rolü verildi.**]  `,
 });
-
-bot.command({
-name:"çekiliş",
-code:`
-<@&970349515074842739>
-$deletecommand
-$onlyForRoles[975126345841520690;]
-$onlyIf[$message==;]
-`
-  })

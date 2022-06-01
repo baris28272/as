@@ -1,6 +1,5 @@
 module.exports = {
 name:"yardım",
-aliases:["help","yardim",],
 code:`
 $author[1;$userTag;$authorAvatar]
 $color[1;RANDOM]
@@ -15,7 +14,7 @@ $addField[1;**<:admin:977852980990726154>・Yetkili**;
 \`
 ]
 $addField[1;**<:uye:977856238056534047>・Kullanıcı**;
-\`?avatar / ?sunucu-avatar / ?öneri / ?destek / ?banner / ?kurucu
+\`?avatar / ?sunucu-avatar / ?komut-sayısı / ?öneri / ?destek
 \`
 ]
 
