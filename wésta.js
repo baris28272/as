@@ -13,8 +13,7 @@ bot.onJoin();
 bot.onLeave();
 bot.onMessage(); //enables bot to see messages (required for executing Commands)
 const loader = new aoijs.LoadCommands(bot);
-loader.load(bot.cmd,'./commands/') 
-require('./dashbord.js')(bot,8080,'./komutlar','aoi.js','v5')
+loader.load(bot.cmd,'./komutlar/') 
 
 bot.variables({
   para: "0",
