@@ -8,21 +8,9 @@
     "@akarui/aoi.music": "^1.0.2",
     "aoi.js-plugins": "1.6.2", 
     "aoi.mongo": "^0.1.1",
-    "discord.js": "^13.6.0",
-       "cookie-parser": "^1.4.6",
-    "express": "^4.17.3"
+    "discord.js": "^13.6.0"
   },
   "engines": {
     "node": "16.x"
-  },
-   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-node"
-  },
-   "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
-
+  }
 }
