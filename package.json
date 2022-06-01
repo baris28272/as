@@ -2,9 +2,9 @@
   "name": "hello-node",
   "version": "0.0.1",
   "description": "A simple Node app built on fastify, instantly up and running.",
-  "main": "westa.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node westa.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "aoi.js": "^5.2.0",
