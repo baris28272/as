@@ -1,19 +1,32 @@
-const aoijs = require("aoi.js");
-const Discord = require("discord.js");
-const bot = new aoijs.Bot({
-  token: process.env.token,
-  prefix: "$getServerVar[prefix]",
-  intents: "all",
-  fetchInvites: true,
-});
-bot.onGuildJoin();
-bot.onGuildLeave();
-bot.onInteractionCreate();
-bot.onJoin();
-bot.onLeave();
-bot.onMessage(); //enables bot to see messages (required for executing Commands)
-const loader = new aoijs.LoadCommands(bot);
-loader.load(bot.cmd, "./komutlar/");
+const aoi = require('aoi.js')
+const bot = new aoi.Bot({
+   token: process.env.token, ////token enve
+   prefix:"?",
+   intents: 'all',
+database: {
+         type:'default',
+        db:require('quick.db'),//herhangi bir data base modülüde olur
+        path:"./database/",//dosya adı
+        tables:["westa"],
+        promisify:true
+    } .
+  bot.readyCommand({
+  channel:"LOG KANAL İD",
+  code:`
+  $log[Aktifim]
+  `
+})
+})
+ 
+////HANDLER//////
+bot.onInteractionCreate()
+bot.onLeave()
+bot.onMessage()
+bot.onMessageDelete()
+const loader = new aoi.LoadCommands(bot);
+loader.load(bot.cmd,'./commands/') 
+require('./dashbord.js')(bot,8080,'./commands','aoi.js','v5')
+
 
 bot.variables({
   para: "0",
