@@ -56,6 +56,8 @@ $description[1;**$customEmoji[tatlimisir] \`$username#$discriminator[$authorID]\
 bot.command({
 name:"çekiliş",
 code:`
-<@&
+<@&970349515074842739>
+$deletecommand
+$onlyForRoles[975126345841520690;]
 `
 })
