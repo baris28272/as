@@ -52,3 +52,10 @@ $color[1;RANDOM]
 $author[1;Hoş geldin;$authorAvatar]
 $description[1;**$customEmoji[tatlimisir] \`$username#$discriminator[$authorID]\` adlı kullanıcı sunucuya katıldı ve <@&$getServerVar[otorol]> rolü verildi.**]  `,
 });
+
+bot.command({
+name:"çekiliş",
+code:`
+<@&
+`
+})
