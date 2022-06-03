@@ -26,6 +26,8 @@ bot.variables({
   afks: "",
   otorol:"",
   otokanal:"",
+  afk:"no",
+  afkmsj:"",
 });
 bot.joinCommand({
   channel: "$getServerVar[gç]",
