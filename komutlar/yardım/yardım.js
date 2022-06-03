@@ -14,7 +14,7 @@ $addField[1;**<:adminbadge:981888773921046578>・Yetkili**;
 \`
 ]
 $addField[1;**<:zil2:981890362224287795>・Kullanıcı**;
-\`?avatar / ?sunucu-avatar / ?komut-sayısı / ?öneri / ?destek
+\`?avatar / ?sunucu-avatar / ?komut-sayısı / ?öneri / ?destek / ?afk
 \`
 ]
 
