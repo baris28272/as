@@ -1,12 +1,11 @@
 module.exports = [{
   name: "afk",
-  description: "AFK Durumuna Geçin",
   code: `
 $author[1;$userTag;$authorAvatar]
 $color[1;33FF00]
 $description[1;**$customEmoji[tatlimisir] <@$authorID>**, **\`$noMentionMessage\` Sebebi ile AFK durumuna geçtin.**]
-$setGlobalUserVar[afk;yes]`setGlobalUserVar[afkmsj;$noMentionMessage]
-
+$setGlobalUserVar[afk;yes]
+$setGlobalUserVar[afkmsj;$noMentionMessage]
 $onlyIf[$getGlobalUserVar[afk;$authorID]==no;]
 `
 },{
