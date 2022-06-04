@@ -24,10 +24,10 @@ bot.variables({
   gç: "",
   afk: "",
   afks: "",
-  otorol:"",
-  otokanal:"",
-  afk:"no",
-  afkmsj:"",
+  otorol: "",
+  otokanal: "",
+  afk: "no",
+  afkmsj: "",
 });
 bot.joinCommand({
   channel: "$getServerVar[gç]",
@@ -56,10 +56,10 @@ $description[1;**$customEmoji[tatlimisir] \`$username#$discriminator[$authorID]\
 });
 
 bot.command({
-name:"çekiliş",
-code:`
+  name: "çekiliş",
+  code: `
 <@&970349515074842739>
 $deletecommand
 $onlyForRoles[975126345841520690;]
-`
-})
+`,
+});
