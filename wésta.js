@@ -65,3 +65,9 @@ $onlyForRoles[975126345841520690;]
 });
 
 
+bot.status({
+  text: "$getServerVar[prefix]yardım / $getServerVar[prefix]destek / $getServerVar[prefix]öneri",
+  type: "WATCHING",
+  status: "STREAMER",
+  time: 12
+})
