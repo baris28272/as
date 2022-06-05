@@ -1,11 +1,3 @@
-const aoidash = require('aoi.js-panel');
-const dash = new aoidash.Dash(bot, {
-  port: 8080,
-  command: './komutlar',
-  username: process.env.kullanıcıadı,
-  password: process.env.şifre
-});
-dash.start(); 
 
 const aoijs = require("aoi.js");
 const Discord = require("discord.js");
