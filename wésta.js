@@ -18,7 +18,7 @@ loader.load(bot.cmd, "./komutlar/");
 const aoidash = require('aoi.js-panel');
 const dash = new aoidash.Dash(bot, {
   port: 8080,
-  command: './komutlar',
+  command: "./komutlar",
   username: process.env.kullanıcıadı,
   password: process.env.şifre
 
