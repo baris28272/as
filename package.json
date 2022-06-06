@@ -1,6 +1,10 @@
 {
-  "scripts": {
-    "start": "node wésta.js"
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wésta.js",
+  "engines": {
+    "node": "16.x"
   },
   "dependencies": {
     "aoi.js": "^5.1.2",
@@ -11,7 +15,12 @@
     "discord.js": "^13.6.0",
     "aoi.js-panel": "^1.4.4"
   },
-  "engines": {
-    "node": "16.x"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "start": "node wésta.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
+

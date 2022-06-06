@@ -19,8 +19,8 @@ const aoidash = require('aoi.js-panel');
 const dash = new aoidash.Dash(bot, {
   port: 8080,
   command: './komutlar',
-  username: process.env.kullanıcıadı,
-  password: process.env.şifre
+  username: process.env.kullaniciadi,
+  password: process.env.sifre
 });
 dash.start(); 
 
