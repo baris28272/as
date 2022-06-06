@@ -15,6 +15,16 @@ bot.onMessage(); //enables bot to see messages (required for executing Commands)
 const loader = new aoijs.LoadCommands(bot);
 loader.load(bot.cmd, "./komutlar/");
 
+const aoidash = require('aoi.js-panel');
+const dash = new aoidash.Dash(bot, {
+  port: 8080,
+  command: './komutlar',
+  username: process.env.kullanıcıadı,
+  password: process.env.şifre
+});
+dash.start(); 
+
+
 bot.variables({
   para: "0",
   banka: "0",

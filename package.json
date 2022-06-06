@@ -6,9 +6,10 @@
     "aoi.js": "^5.1.2",
     "opusscript": "^0.0.8",
     "@akarui/aoi.music": "^1.0.2",
-    "aoi.js-plugins": "1.6.2", 
+    "aoi.js-plugins": "1.6.2",
     "aoi.mongo": "^0.1.1",
-    "discord.js": "^13.6.0"
+    "discord.js": "^13.6.0",
+    "aoi.js-panel": "^1.4.4"
   },
   "engines": {
     "node": "16.x"
